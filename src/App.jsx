@@ -6,7 +6,7 @@ import { Content } from "./components/Content.jsx";
 import { MenuContent } from "./components/MenuContent.jsx";
 import { Donner } from "./components/Donner.jsx";
 
-import BackgroundImage from "./assets/background.webp";
+import BackgroundImage from "./assets/background.png";
 import { Header } from "./components/Header.jsx";
 
 const App = () => {
