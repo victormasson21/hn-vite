@@ -10,27 +10,33 @@ export const theme = extendTheme({
   components: {
     Text: {
       baseStyle: {
+        mb: 4,
         color: "text.dark",
-        mb: 2,
+        textAlign: "justify",
+        lineHeight: "tall",
       },
     },
     Heading: {
       baseStyle: {
+        mb: 4,
         color: "text.dark",
         fontFamily: "Salsa, sans-serif",
         fontWeight: "bold",
-        mb: 2,
+        textAlign: "justify",
+        lineHeight: "tall",
       },
     },
-    // Button: {
-    //   baseStyle: {
-    //     width: "fit-content",
-    //     background: "none",
-    //     border: "2px solid",
-    //   },
-    // },
-  },
-  fonts: {
-    heading: `'Salsa', sans-serif`,
+    Button: {
+      variants: {
+        outline: {
+          size: "lg",
+          width: "fit-content",
+          background: "none",
+          border: "2px solid",
+          color: "text.dark",
+          borderColor: "text.dark",
+        },
+      },
+    },
   },
 });

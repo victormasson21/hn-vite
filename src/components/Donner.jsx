@@ -1,24 +1,25 @@
-import { Box, Button, Link } from "@chakra-ui/react";
+import { Box, Button, Link, useTheme } from "@chakra-ui/react";
 import { Heart } from "../assets/Heart.jsx";
 
-export const Donner = () => (
-  <Link
-    href="https://www.helloasso.com/associations/horizons-nepal"
-    target="_none"
-  >
-    <Button
-      color="text.dark"
-      border="2px #103a55 solid" // TODO
-      mb={4}
-      size="lg"
-      width="fit-content"
-      rightIcon={
-        <Box pt={1 / 2}>
-          <Heart fill="#103a55" />
-        </Box>
-      }
+export const Donner = () => {
+  const {
+    colors: { text },
+  } = useTheme();
+  return (
+    <Link
+      href="https://www.helloasso.com/associations/horizons-nepal"
+      target="_none"
     >
-      Faire un don
-    </Button>
-  </Link>
-);
+      <Button
+        variant="outline"
+        rightIcon={
+          <Box pt={1 / 2}>
+            <Heart fill={text.dark} />
+          </Box>
+        }
+      >
+        Faire un don
+      </Button>
+    </Link>
+  );
+};
