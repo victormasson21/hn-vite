@@ -2,7 +2,9 @@ import { Heading, Text } from "@chakra-ui/react";
 
 export const Contact = () => (
   <>
-    <Text>N’hésitez pas à nous contacter si vous avez plus de questions.</Text>
+    <Text>
+      N&apos;hésitez pas à nous contacter si vous avez plus de questions.
+    </Text>
     <Heading as="p" size="sm">
       horizons.nepal34@gmail.com
     </Heading>

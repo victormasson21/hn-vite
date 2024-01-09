@@ -10,7 +10,7 @@ import BackgroundImage from "./assets/background.png";
 import { Header } from "./components/Header.jsx";
 
 const App = () => {
-  const [displayed, setDisplayed] = useState("education");
+  const [displayed, setDisplayed] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 

@@ -8,8 +8,10 @@ const ContentBlock = ({ title, children }) => {
       backdropFilter="blur(10px)"
       borderRadius="10px"
       background="white"
-      border="2px solid #103a55" // TODO
-      boxShadow="#103a55 3px 3px" // TODO
+      border="2px solid"
+      borderColor="text.dark"
+      boxShadow="3px 3px"
+      boxShadowColor="text.dark"
       maxWidth="xl"
     >
       {title ? (
