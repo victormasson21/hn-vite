@@ -1,7 +1,11 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, useTheme } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 
 const ContentBlock = ({ title, children }) => {
+  const {
+    colors: { text },
+  } = useTheme();
+  console.log({ text });
   return (
     <Box
       p={8}
@@ -10,8 +14,7 @@ const ContentBlock = ({ title, children }) => {
       background="white"
       border="2px solid"
       borderColor="text.dark"
-      boxShadow="3px 3px"
-      boxShadowColor="text.dark"
+      boxShadow={`3px 3px ${text.dark}`}
       maxWidth="xl"
     >
       {title ? (
