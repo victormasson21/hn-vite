@@ -23,7 +23,7 @@ export const Header = ({ displayed, setDisplayed, menuOpen, setMenuOpen }) => {
   return (
     <Stack
       width="100%"
-      pb={8}
+      pb={4}
       mb={isMobile ? 4 : 8}
       spacing={isMobile ? 4 : 8}
       direction="row"
