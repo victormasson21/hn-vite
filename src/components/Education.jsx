@@ -1,4 +1,5 @@
-import { Text, Heading } from "@chakra-ui/react";
+import { Image, Text, Heading } from "@chakra-ui/react";
+import image from "../assets/horizon-nepal-education.jpeg";
 
 export const Education = () => (
   <>
@@ -42,5 +43,10 @@ export const Education = () => (
       financement plus structuré pour rouvrir l&apos;école publique du village.
       Celle-ci a été fermée après plusieurs épisodes de mauvaise gestion.
     </Text>
+    <Image
+      src={image}
+      pb={4}
+      alt="Une photo d'enfants jouant au New Sauraha Day Care Center"
+    />
   </>
 );

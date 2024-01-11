@@ -1,4 +1,5 @@
-import { Heading, Text } from "@chakra-ui/react";
+import { Heading, Image, Text } from "@chakra-ui/react";
+import image from "../assets/horizon-nepal-association.jpeg";
 
 export const Histoire = () => (
   <>
@@ -24,6 +25,11 @@ export const Histoire = () => (
       Tarai. Historiquement discriminés au sein de la société népalaise, les
       Tharu font partie des populations les plus défavorisées du Népal.
     </Text>
+    <Image
+      src={image}
+      mb={2}
+      alt="Une photo de Romain et Sanjaya en mission de recherche au Népal"
+    />
     <Text>
       À force de persévérance, Sanjaya a toutefois réussi à gravir les échelons
       du système éducatif, obtenir son doctorat entre Népal et Pologne, et

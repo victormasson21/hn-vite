@@ -1,4 +1,5 @@
-import { Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
+import image from "../assets/horizon-nepal-futur.jpeg";
 
 export const Futur = () => (
   <>
@@ -26,5 +27,10 @@ export const Futur = () => (
         (numériques ou postaux).
       </ListItem>
     </UnorderedList>
+    <Image
+      src={image}
+      pt={4}
+      alt="Une photo d'enfants célébrant la nouvelle année au New Sauraha Day Care Center"
+    />
   </>
 );

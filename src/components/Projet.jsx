@@ -1,4 +1,12 @@
-import { Heading, Text, UnorderedList, ListItem } from "@chakra-ui/react";
+import {
+  Heading,
+  Image,
+  Text,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
+import image from "../assets/horizon-nepal-projet.jpeg";
+import diagram from "../assets/diagram.png";
 
 export const Projet = () => (
   <>
@@ -16,6 +24,11 @@ export const Projet = () => (
       une qualité de l&apos;enseignement, tout en fournissant un service gratuit
       et en priorité aux enfants des familles les plus défavorisées du village.
     </Text>
+    <Image
+      src={image}
+      pb={4}
+      alt="Une photo d'enfants jouant au New Sauraha Day Care Center"
+    />
     <Text>
       Au Népal, le projet a depuis été discuté au niveau communal. Le maire
       s&apos;est engagé à aider le projet, si l&apos;association peut démontrer
@@ -43,5 +56,10 @@ export const Projet = () => (
         d&apos;environ 30 à 35 élèves par niveau).
       </ListItem>
     </UnorderedList>
+    <Image
+      src={diagram}
+      pt={4}
+      alt="Une photo d'enfants jouant au New Sauraha Day Care Center"
+    />
   </>
 );
