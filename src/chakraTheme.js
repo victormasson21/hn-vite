@@ -29,6 +29,12 @@ export const theme = extendTheme({
         lineHeight: "tall",
       },
     },
+    Link: {
+      baseStyle: {
+        color: "text.dark",
+        textDecoration: "underline",
+      },
+    },
     Button: {
       variants: {
         outline: {

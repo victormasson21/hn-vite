@@ -3,7 +3,7 @@ import { Heading, Text } from "@chakra-ui/react";
 export const Histoire = () => (
   <>
     <Heading as="h3" size="md">
-      L&apos;association Horizons Népal a été créé afin de soutenir le droit à
+      L&apos;association Horizons Népal a été créée afin de soutenir le droit à
       l&apos;éducation d&apos;enfants de familles défavorisées du village de
       Bacchauli dans le district de Chitwan au Népal.
     </Heading>
@@ -11,19 +11,18 @@ export const Histoire = () => (
       Cette association est née à la suite de la rencontre entre deux
       enseignants chercheurs, l&apos;un népalais et l&apos;autre français.
       Sanjaya Mahato, professeur à l&apos;université de Tribuvhan (Katmandou) et
-      Romain Valadaud (chercheur à l&apos;IRD à Montpellier). Ils ont collaboré
-      à plusieurs reprises au sein de différents programmes de recherche au
-      Népal depuis 2014. C&apos;est au cours de ces terrains de recherche
-      qu&apos;une amitié s&apos;est développée, au-delà de la coopération
-      scientifique.
+      Romain Valadaud (chercheur à l&apos;Institut de Recherche pour le
+      Développement à Montpellier). Ils ont collaboré à plusieurs reprises au
+      sein de différents programmes de recherche au Népal depuis 2014.
+      C&apos;est au cours de ces terrains de recherche qu&apos;une amitié
+      s&apos;est développée, au-delà de la coopération scientifique.
     </Text>
     <Text>
       Sanjaya Mahato est issu d&apos;une famille défavorisée du village de
       Bachhauli, dans le district de Chitwan dans les plaines du Népal. Il fait
-      partie de l&apos;ethnie Tharu, premiers habitants des forêts des plaines
-      du Népal, le Tarai. Historiquement discriminés au sein de la société
-      népalaise, les Tharu font partie des populations les plus défavorisées du
-      Népal.
+      partie de l&apos;ethnie Tharu, premiers habitants des plaines du Népal, le
+      Tarai. Historiquement discriminés au sein de la société népalaise, les
+      Tharu font partie des populations les plus défavorisées du Népal.
     </Text>
     <Text>
       À force de persévérance, Sanjaya a toutefois réussi à gravir les échelons
