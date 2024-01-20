@@ -21,7 +21,6 @@ export const Contact = () => (
       <Link
         href="https://www.helloasso.com/associations/horizons-nepal"
         isExternal
-        as="b"
       >
         notre campagne de financement ici
       </Link>{" "}
