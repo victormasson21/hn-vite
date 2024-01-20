@@ -11,16 +11,16 @@ export const Histoire = () => (
     <Text>
       Cette association est née à la suite de la rencontre entre deux
       enseignants chercheurs, l&apos;un népalais et l&apos;autre français.
-      Sanjaya Mahato, professeur à l&apos;université de Tribuvhan (Katmandou) et
-      Romain Valadaud (chercheur à l&apos;Institut de Recherche pour le
-      Développement à Montpellier). Ils ont collaboré à plusieurs reprises au
-      sein de différents programmes de recherche au Népal depuis 2014.
-      C&apos;est au cours de ces terrains de recherche qu&apos;une amitié
-      s&apos;est développée, au-delà de la coopération scientifique.
+      Sanjaya Mahato, professeur à Kathmandu University et Romain Valadaud
+      (chercheur à l&apos;Institut de Recherche pour le Développement à
+      Montpellier). Ils ont collaboré à plusieurs reprises au sein de différents
+      programmes de recherche au Népal depuis 2014. C&apos;est au cours de ces
+      terrains de recherche qu&apos;une amitié s&apos;est développée, au-delà de
+      la coopération scientifique.
     </Text>
     <Text>
       Sanjaya Mahato est issu d&apos;une famille défavorisée du village de
-      Bachhauli, dans le district de Chitwan dans les plaines du Népal. Il fait
+      Jankauli, dans le district de Chitwan dans les plaines du Népal. Il fait
       partie de l&apos;ethnie Tharu, premiers habitants des plaines du Népal, le
       Tarai. Historiquement discriminés au sein de la société népalaise, les
       Tharu font partie des populations les plus défavorisées du Népal.
