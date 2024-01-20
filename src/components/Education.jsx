@@ -29,19 +29,20 @@ export const Education = () => (
       extra-scolaire.
     </Heading>
     <Text>
-      Dans ce contexte, Sanjaya et sa femme Kavita ont créé une organisation
-      caritative (Tharu Women&apos;s Hands) qui s&apos;efforce, depuis 2014, de
-      financer la scolarisation des enfants issus des famille défavorisées de
-      son village à travers un parrainage individuel. Adossée à l&apos;activité
-      touristique d&apos;une maison d&apos;hôte (hébergements, locations de
-      vélo, restauration, organisation de tours etc.), cette charité parraine la
-      scolarité de certains enfants, et soutien de manière ponctuelle
-      l&apos;école maternelle du village (appelée le New Sauraha Day Care
-      Center). Face aux manques de moyens de sa charité pour à la fois parrainer
-      des enfants dans des écoles privées et maintenir l&apos;activité de
-      l&apos;école maternelle, il cherche, depuis 5 ans, à monter un projet de
-      financement plus structuré pour rouvrir l&apos;école publique du village.
-      Celle-ci a été fermée après plusieurs épisodes de mauvaise gestion.
+      Dans ce contexte, Sanjaya et sa femme Runa ont créé une organisation
+      caritative, Tharu Community Women&apos;s Hand, qui s&apos;efforce, depuis
+      2014, de financer la scolarisation des enfants issus des famille
+      défavorisées de son village à travers un parrainage individuel. Adossée à
+      l&apos;activité touristique d&apos;une maison d&apos;hôte (hébergements,
+      locations de vélo, restauration, organisation de tours etc.), cette
+      charité parraine la scolarité de certains enfants, et soutien de manière
+      ponctuelle l&apos;école maternelle du village (appelée le New Sauraha Day
+      Care Center). Face aux manques de moyens de sa charité pour à la fois
+      parrainer des enfants dans des écoles privées et maintenir l&apos;activité
+      de l&apos;école maternelle, il cherche, depuis 5 ans, à monter un projet
+      de financement plus structuré pour rouvrir l&apos;école publique du
+      village. Celle-ci a été fermée après plusieurs épisodes de mauvaise
+      gestion.
     </Text>
     <Image
       src={image}
