@@ -1,7 +1,7 @@
 import { Box, Heading, useTheme } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 
-const ContentBlock = ({ title, children }) => {
+const ContentBlock = ({ title, displayTitle, children }) => {
   const {
     colors: { text },
   } = useTheme();
@@ -17,7 +17,7 @@ const ContentBlock = ({ title, children }) => {
       boxShadow={`3px 3px ${text.dark}`}
       maxWidth="xl"
     >
-      {title ? (
+      {title && displayTitle ? (
         <Heading as="h2" size="lg" mb={4}>
           {title}
         </Heading>
@@ -28,9 +28,10 @@ const ContentBlock = ({ title, children }) => {
 };
 
 export const Content = ({ displayed }) => {
+  const { title, displayTitle, component } = contentMap[displayed];
   return (
-    <ContentBlock title={contentMap[displayed].title}>
-      {contentMap[displayed].component}
+    <ContentBlock title={title} displayTitle={displayTitle}>
+      {component}
     </ContentBlock>
   );
 };
