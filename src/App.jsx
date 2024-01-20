@@ -30,46 +30,46 @@ const App = () => {
       bgSize="cover"
       bgRepeat="no-repeat"
       overflow="scroll"
-      py={[4, 8]}
-      px={[4, 8, 16]}
     >
-      <Stack width="100%" height="100%">
-        <Header
-          displayed={displayed}
-          setDisplayed={setDisplayed}
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-        />
+      <Box py={[4, 8]} px={[4, 8, 16]} width="100%" height="100%">
+        <Stack width="100%" height="100%">
+          <Header
+            displayed={displayed}
+            setDisplayed={setDisplayed}
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+          />
 
-        <Stack
-          spacing={8}
-          pb={8}
-          justify="space-between"
-          direction={isMobile ? "column" : "row"}
-          align={isMobile ? "center" : "flex-start"}
-          height={isMobile ? "100%" : "auto"}
-        >
-          <Box>
-            {isMobile && menuOpen ? (
-              <StyledBlock>
-                <MenuContent
-                  displayed={displayed}
-                  setDisplayed={setDisplayed}
-                />
-              </StyledBlock>
-            ) : (
-              <Content displayed={displayed} menuOpen={menuOpen} />
-            )}
-          </Box>
-          {isMobile ? (
-            <Box pb={12}>
-              <Donner />
+          <Stack
+            spacing={8}
+            pb={8}
+            justify="space-between"
+            direction={isMobile ? "column" : "row"}
+            align={isMobile ? "center" : "flex-start"}
+            height={isMobile ? "100%" : "auto"}
+          >
+            <Box>
+              {isMobile && menuOpen ? (
+                <StyledBlock>
+                  <MenuContent
+                    displayed={displayed}
+                    setDisplayed={setDisplayed}
+                  />
+                </StyledBlock>
+              ) : (
+                <Content displayed={displayed} menuOpen={menuOpen} />
+              )}
             </Box>
-          ) : (
-            <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
-          )}
+            {isMobile ? (
+              <Box pb={12}>
+                <Donner />
+              </Box>
+            ) : (
+              <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
+            )}
+          </Stack>
         </Stack>
-      </Stack>
+      </Box>
     </Box>
   );
 };
