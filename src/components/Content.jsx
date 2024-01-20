@@ -1,4 +1,5 @@
 import { Box, Heading, useTheme } from "@chakra-ui/react";
+import { StyledBlock } from "./StyledBlock";
 import { contentMap } from "../contentMap";
 
 const ContentBlock = ({ title, displayTitle, children }) => {
@@ -7,23 +8,14 @@ const ContentBlock = ({ title, displayTitle, children }) => {
   } = useTheme();
   console.log({ text });
   return (
-    <Box
-      p={8}
-      backdropFilter="blur(10px)"
-      borderRadius="10px"
-      background="white"
-      border="2px solid"
-      borderColor="text.dark"
-      boxShadow={`3px 3px ${text.dark}`}
-      maxWidth="xl"
-    >
+    <StyledBlock>
       {title && displayTitle ? (
         <Heading as="h2" size="lg" mb={4}>
           {title}
         </Heading>
       ) : null}
       <Box>{children}</Box>
-    </Box>
+    </StyledBlock>
   );
 };
 

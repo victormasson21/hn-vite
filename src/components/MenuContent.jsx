@@ -1,7 +1,8 @@
-import { Heading, List, ListItem } from "@chakra-ui/react";
+import { Heading, List, ListItem, useMediaQuery } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 
 export const MenuContent = ({ displayed, setDisplayed }) => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
     <List>
       {Object.keys(contentMap).map((item) => {
@@ -20,7 +21,7 @@ export const MenuContent = ({ displayed, setDisplayed }) => {
               opacity={displayed === item ? 0.6 : 1}
               sx={{ "&:hover": { opacity: 0.6 } }}
               whiteSpace="nowrap"
-              textAlign="right"
+              textAlign={isMobile ? "center" : "right"}
             >
               {contentMap[item].title}
             </Heading>
