@@ -5,6 +5,7 @@ import { Box, Stack, useMediaQuery } from "@chakra-ui/react";
 import { Content } from "./components/Content.jsx";
 import { MenuContent } from "./components/MenuContent.jsx";
 import { Donner } from "./components/Donner.jsx";
+import { StyledBlock } from "./components/StyledBlock.jsx";
 
 import BackgroundImage from "./assets/background.png";
 import { Header } from "./components/Header.jsx";
@@ -50,7 +51,12 @@ const App = () => {
         >
           <Box>
             {isMobile && menuOpen ? (
-              <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
+              <StyledBlock>
+                <MenuContent
+                  displayed={displayed}
+                  setDisplayed={setDisplayed}
+                />
+              </StyledBlock>
             ) : (
               <Content displayed={displayed} menuOpen={menuOpen} />
             )}
