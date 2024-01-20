@@ -9,9 +9,11 @@ export const Donner = () => {
     <Link
       href="https://www.helloasso.com/associations/horizons-nepal"
       target="_none"
+      sx={{ textDecoration: "none" }}
     >
       <Button
         variant="outline"
+        bgColor="gray.100"
         rightIcon={
           <Box pt={1 / 2}>
             <Heart fill={text.dark} />

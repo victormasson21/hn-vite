@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-// import "@fontsource/Salsa/400.css";
 
 export const theme = extendTheme({
   colors: {
@@ -25,7 +24,7 @@ export const theme = extendTheme({
         color: "text.dark",
         fontFamily: "Salsa, sans-serif",
         fontWeight: "bold",
-        textAlign: "justify",
+        textAlign: "left",
         lineHeight: "tall",
       },
     },

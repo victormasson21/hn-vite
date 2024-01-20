@@ -1,4 +1,5 @@
-import { Heading, Text } from "@chakra-ui/react";
+import { Image, Heading, Text } from "@chakra-ui/react";
+import image from "../assets/map.png";
 
 export const Home = () => (
   <>
@@ -11,5 +12,10 @@ export const Home = () => (
       finançons la rénovation et le fonctionnement d&apos;une école dans le
       village de Sauraha dans le district de Chitwan.
     </Text>
+    <Image
+      src={image}
+      pb={4}
+      alt="Une carte du Népal montrant la localisation du New Sauraha Day Care Center"
+    />
   </>
 );

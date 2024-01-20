@@ -56,7 +56,9 @@ const App = () => {
             )}
           </Box>
           {isMobile ? (
-            <Donner />
+            <Box pb={12}>
+              <Donner />
+            </Box>
           ) : (
             <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
           )}

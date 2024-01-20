@@ -3,7 +3,7 @@ import { contentMap } from "../contentMap";
 
 export const MenuContent = ({ displayed, setDisplayed }) => {
   return (
-    <List textAlign="right">
+    <List>
       {Object.keys(contentMap).map((item) => {
         return (
           <ListItem
@@ -20,6 +20,7 @@ export const MenuContent = ({ displayed, setDisplayed }) => {
               opacity={displayed === item ? 0.6 : 1}
               sx={{ "&:hover": { opacity: 0.6 } }}
               whiteSpace="nowrap"
+              textAlign="right"
             >
               {contentMap[item].title}
             </Heading>
