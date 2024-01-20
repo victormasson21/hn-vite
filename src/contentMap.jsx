@@ -6,10 +6,18 @@ import { Futur } from "./components/Futur.jsx";
 import { Contact } from "./components/Contact.jsx";
 
 export const contentMap = {
-  home: { title: "", component: <Home /> },
-  histoire: { title: "Histoire de l’association", component: <Histoire /> },
-  education: { title: "L’éducation au Népal", component: <Education /> },
-  projet: { title: "Le projet", component: <Projet /> },
-  futur: { title: "Le futur", component: <Futur /> },
-  participer: { title: "Contact", component: <Contact /> },
+  home: { title: "Intro", displayTitle: false, component: <Home /> },
+  histoire: {
+    title: "Histoire de l’association",
+    displayTitle: true,
+    component: <Histoire />,
+  },
+  education: {
+    title: "L’éducation au Népal",
+    displayTitle: true,
+    component: <Education />,
+  },
+  projet: { title: "Le projet", displayTitle: true, component: <Projet /> },
+  futur: { title: "Le futur", displayTitle: true, component: <Futur /> },
+  participer: { title: "Contact", displayTitle: true, component: <Contact /> },
 };
