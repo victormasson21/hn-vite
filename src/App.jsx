@@ -30,10 +30,10 @@ const App = () => {
       bgSize="cover"
       bgRepeat="no-repeat"
       overflow="scroll"
-      py={[4, 8]}
+      pt={[4, 8]}
       px={[4, 8, 16]}
     >
-      <Stack width="100%" height="100%">
+      <Stack width="100%" height="100%" gap={0}>
         <Header
           displayed={displayed}
           setDisplayed={setDisplayed}
@@ -43,11 +43,13 @@ const App = () => {
 
         <Stack
           spacing={8}
+          pt={isMobile ? 4 : 8}
           pb={8}
           justify="space-between"
           direction={isMobile ? "column" : "row"}
           align={isMobile ? "center" : "flex-start"}
           height={isMobile ? "100%" : "auto"}
+          overflow="scroll"
         >
           <Box>
             {isMobile && menuOpen ? (
@@ -66,7 +68,9 @@ const App = () => {
               <Donner />
             </Box>
           ) : (
-            <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
+            <Box position="sticky" top={0}>
+              <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
+            </Box>
           )}
         </Stack>
       </Stack>
