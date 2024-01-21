@@ -24,15 +24,14 @@ export const Header = ({ displayed, setDisplayed, menuOpen, setMenuOpen }) => {
     <Stack
       width="100%"
       pb={4}
-      mb={isMobile ? 4 : 8}
       spacing={isMobile ? 4 : 8}
       direction="row"
       justify="space-between"
       align="center"
-      borderBottom="3px solid"
+      borderBottom="2px solid"
       borderColor="text.dark"
-      // position="sticky" // TODO
-      // top="0"
+      position="sticky"
+      top="0"
     >
       <HorizonsNepal setDisplayed={setDisplayed} />
       {isMobile ? (
