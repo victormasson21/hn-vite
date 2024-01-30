@@ -10,7 +10,7 @@ export const Home = () => (
     <Text>
       À travers un partenariat avec une organisation caritative népalaise, nous
       finançons la rénovation et le fonctionnement d&apos;une école dans le
-      village de Sauraha dans le district de Chitwan.
+      village de Jankauli dans le district de Chitwan.
     </Text>
     <Image
       src={image}
