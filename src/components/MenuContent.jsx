@@ -1,30 +1,30 @@
-import { Heading, List, ListItem, useMediaQuery } from "@chakra-ui/react";
+import { Heading, Link, List, ListItem, useMediaQuery } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 
-export const MenuContent = ({ displayed, setDisplayed }) => {
+export const MenuContent = ({ setMenuOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
     <List>
-      {Object.keys(contentMap).map((item) => {
+      {Object.keys(contentMap).map((key) => {
         return (
-          <ListItem
-            key={item}
-            onClick={() => {
-              setDisplayed(item);
-            }}
-          >
-            <Heading
-              as="h2"
-              size="md"
-              mb={2}
-              cursor="pointer"
-              opacity={displayed === item ? 0.6 : 1}
-              sx={{ "&:hover": { opacity: 0.6 } }}
-              whiteSpace="nowrap"
-              textAlign={isMobile ? "center" : "right"}
+          <ListItem key={key}>
+            <Link
+              href={`#${key}`}
+              sx={{ textDecoration: "none" }}
+              onClick={() => setMenuOpen(false)}
             >
-              {contentMap[item].title}
-            </Heading>
+              <Heading
+                as="h2"
+                size="md"
+                mb={2}
+                cursor="pointer"
+                sx={{ "&:hover": { opacity: 0.6 } }}
+                whiteSpace="nowrap"
+                textAlign={isMobile ? "center" : "right"}
+              >
+                {contentMap[key].title}
+              </Heading>
+            </Link>
           </ListItem>
         );
       })}
