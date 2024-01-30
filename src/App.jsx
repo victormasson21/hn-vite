@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { Box, Stack, useMediaQuery } from "@chakra-ui/react";
 
@@ -11,13 +11,8 @@ import BackgroundImage from "./assets/background.png";
 import { Header } from "./components/Header.jsx";
 
 const App = () => {
-  const [displayed, setDisplayed] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
-
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [displayed]);
 
   return (
     <Box
@@ -34,12 +29,7 @@ const App = () => {
       px={[4, 8, 16]}
     >
       <Stack width="100%" height="100%" gap={0}>
-        <Header
-          displayed={displayed}
-          setDisplayed={setDisplayed}
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-        />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
         <Stack
           spacing={8}
@@ -54,13 +44,10 @@ const App = () => {
           <Box>
             {isMobile && menuOpen ? (
               <StyledBlock>
-                <MenuContent
-                  displayed={displayed}
-                  setDisplayed={setDisplayed}
-                />
+                <MenuContent setMenuOpen={setMenuOpen} />
               </StyledBlock>
             ) : (
-              <Content displayed={displayed} menuOpen={menuOpen} />
+              <Content menuOpen={menuOpen} />
             )}
           </Box>
           {isMobile ? (
@@ -68,8 +55,8 @@ const App = () => {
               <Donner />
             </Box>
           ) : (
-            <Box position="sticky" top={0}>
-              <MenuContent displayed={displayed} setDisplayed={setDisplayed} />
+            <Box position="sticky" top={0} pr={8}>
+              <MenuContent setMenuOpen={setMenuOpen} />
             </Box>
           )}
         </Stack>

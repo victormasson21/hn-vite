@@ -1,11 +1,12 @@
 import { Box, useTheme } from "@chakra-ui/react";
 
-export const StyledBlock = ({ children }) => {
+export const StyledBlock = ({ id, children }) => {
   const {
     colors: { text },
   } = useTheme();
   return (
     <Box
+      id={id}
       p={8}
       backdropFilter="blur(10px)"
       borderRadius="10px"
