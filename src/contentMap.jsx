@@ -8,16 +8,28 @@ import { Contact } from "./components/Contact.jsx";
 export const contentMap = {
   home: { title: "Intro", displayTitle: false, component: <Home /> },
   histoire: {
-    title: "Histoire de l’association",
+    title: { FR: "Notre histoire", EN: "Our story" },
     displayTitle: true,
     component: <Histoire />,
   },
   education: {
-    title: "L’éducation au Népal",
+    title: { FR: "L’éducation au Népal", EN: "Education in Nepal" },
     displayTitle: true,
     component: <Education />,
   },
-  projet: { title: "Le projet", displayTitle: true, component: <Projet /> },
-  futur: { title: "Le futur", displayTitle: true, component: <Futur /> },
-  participer: { title: "Contact", displayTitle: true, component: <Contact /> },
+  projet: {
+    title: { FR: "Le projet", EN: "The project" },
+    displayTitle: true,
+    component: <Projet />,
+  },
+  futur: {
+    title: { FR: "The future", EN: "What comes next" },
+    displayTitle: true,
+    component: <Futur />,
+  },
+  participer: {
+    title: { FR: "Contact", EN: "Contact" },
+    displayTitle: true,
+    component: <Contact />,
+  },
 };
