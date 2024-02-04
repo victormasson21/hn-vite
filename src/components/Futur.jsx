@@ -36,7 +36,8 @@ export const Futur = () => {
       </UnorderedList>
       <Image
         src={image}
-        pt={4}
+        mt={4}
+        borderRadius="10px"
         alt={
           {
             FR: "Une photo d'enfants célébrant la nouvelle année au New Sauraha Day Care Center",

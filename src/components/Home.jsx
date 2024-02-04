@@ -26,7 +26,7 @@ export const Home = () => {
       </Text>
       <Image
         src={image}
-        pb={4}
+        mb={4}
         alt={
           {
             FR: "Une carte du Népal montrant la localisation du New Sauraha Day Care Center",
