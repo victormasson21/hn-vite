@@ -35,6 +35,7 @@ export const Histoire = () => {
       <Image
         src={image}
         mb={2}
+        borderRadius="10px"
         alt={
           {
             FR: "Une photo de Romain et Sanjaya en mission de recherche au Népal",

@@ -42,7 +42,8 @@ export const Education = () => {
       </Text>
       <Image
         src={image}
-        pb={4}
+        mb={4}
+        borderRadius="10px"
         alt={
           {
             FR: "Une photo d'enfants jouant au New Sauraha Day Care Center",

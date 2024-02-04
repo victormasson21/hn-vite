@@ -25,7 +25,8 @@ export const Projet = () => {
       </Text>
       <Image
         src={image}
-        pb={4}
+        mb={4}
+        borderRadius="10px"
         alt={
           {
             FR: "Une photo d'enfants jouant au New Sauraha Day Care Center",
@@ -69,7 +70,8 @@ export const Projet = () => {
       </UnorderedList>
       <Image
         src={diagram}
-        pt={4}
+        mt={4}
+        borderRadius="10px"
         alt={
           {
             FR: "Une photo d'enfants jouant au New Sauraha Day Care Center",
