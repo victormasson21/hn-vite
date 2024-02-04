@@ -1,6 +1,8 @@
 import { Box, Heading, Stack } from "@chakra-ui/react";
 import { StyledBlock } from "./StyledBlock";
 import { contentMap } from "../contentMap";
+import { useContext } from "react";
+import { LanguageContext } from "../App";
 
 const ContentBlock = ({ id, title, displayTitle, children }) => {
   return (
@@ -16,8 +18,8 @@ const ContentBlock = ({ id, title, displayTitle, children }) => {
 };
 
 export const Content = () => {
+  const locale = useContext(LanguageContext);
   const keys = Object.keys(contentMap);
-  console.log({ keys });
   return (
     <Stack spacing={32}>
       {keys.map((key) => {
@@ -26,7 +28,7 @@ export const Content = () => {
           <ContentBlock
             key={key}
             id={key}
-            title={title}
+            title={title[locale]}
             displayTitle={displayTitle}
           >
             {component}

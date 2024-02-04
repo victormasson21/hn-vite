@@ -1,7 +1,10 @@
 import { Box, Button, Link, useTheme } from "@chakra-ui/react";
 import { Heart } from "../assets/Heart.jsx";
+import { useContext } from "react";
+import { LanguageContext } from "../App";
 
 export const Donner = () => {
+  const locale = useContext(LanguageContext);
   const {
     colors: { text },
   } = useTheme();
@@ -20,7 +23,12 @@ export const Donner = () => {
           </Box>
         }
       >
-        Faire un don
+        {
+          {
+            FR: "Faire un don",
+            EN: "Donate",
+          }[locale]
+        }
       </Button>
     </Link>
   );

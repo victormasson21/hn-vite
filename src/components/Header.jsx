@@ -2,15 +2,26 @@ import { Heading, Image, Stack, useMediaQuery } from "@chakra-ui/react";
 import Placeholder from "../assets/placeholder.png";
 import { MobileMenu } from "./MobileMenu";
 import { Donner } from "./Donner";
+import { useContext } from "react";
+import { LanguageContext } from "../App";
 
-const HorizonsNepal = () => (
-  <Stack direction="row" align="center" spacing={4} cursor="pointer">
-    <Image src={Placeholder} height="40px" />
-    <Heading as="h2" size="xl" mb={0}>
-      Horizons Népal
-    </Heading>
-  </Stack>
-);
+const HorizonsNepal = () => {
+  const locale = useContext(LanguageContext);
+
+  return (
+    <Stack direction="row" align="center" spacing={4} cursor="pointer">
+      <Image src={Placeholder} height="40px" />
+      <Heading as="h2" size="xl" mb={0}>
+        {
+          {
+            FR: "Horizons Népal",
+            EN: "Horizons Nepal",
+          }[locale]
+        }
+      </Heading>
+    </Stack>
+  );
+};
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
