@@ -8,7 +8,7 @@ export const LanguageSwitcher = ({ setLocale }) => {
     <Button
       onClick={() => setLocale(locale === "EN" ? "FR" : "EN")}
       variant="link"
-      mr={-2}
+      fontSize={18}
     >
       {locale === "EN" ? "FR" : "EN"}
     </Button>

@@ -23,7 +23,7 @@ export const contentMap = {
     component: <Projet />,
   },
   futur: {
-    title: { FR: "The future", EN: "What comes next" },
+    title: { FR: "Le futur", EN: "What comes next" },
     displayTitle: true,
     component: <Futur />,
   },
