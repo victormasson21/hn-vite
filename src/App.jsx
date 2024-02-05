@@ -41,7 +41,11 @@ const App = () => {
         px={[4, 8, 16]}
       >
         <Stack width="100%" height="100%" gap={0}>
-          <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Header
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            setLocale={setLocale}
+          />
 
           <Stack
             spacing={8}
@@ -56,10 +60,7 @@ const App = () => {
             <Box>
               {isMobile && menuOpen ? (
                 <StyledBlock>
-                  <MenuContent
-                    setMenuOpen={setMenuOpen}
-                    setLocale={setLocale}
-                  />
+                  <MenuContent setMenuOpen={setMenuOpen} />
                 </StyledBlock>
               ) : (
                 <Content menuOpen={menuOpen} />
@@ -71,7 +72,7 @@ const App = () => {
               </Box>
             ) : (
               <Box position="sticky" top={0} pr={4}>
-                <MenuContent setMenuOpen={setMenuOpen} setLocale={setLocale} />
+                <MenuContent setMenuOpen={setMenuOpen} />
               </Box>
             )}
           </Stack>

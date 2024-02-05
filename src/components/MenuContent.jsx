@@ -2,14 +2,12 @@ import { Heading, Link, List, ListItem, useMediaQuery } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 
-export const MenuContent = ({ setMenuOpen, setLocale }) => {
+export const MenuContent = ({ setMenuOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const locale = useContext(LanguageContext);
   return (
     <List textAlign={isMobile ? "center" : "right"}>
-      <LanguageSwitcher setLocale={setLocale} />
       {Object.keys(contentMap).map((key) => {
         return (
           <ListItem key={key}>

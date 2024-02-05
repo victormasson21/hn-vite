@@ -4,6 +4,7 @@ import { MobileMenu } from "./MobileMenu";
 import { Donner } from "./Donner";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const HorizonsNepal = () => {
   const locale = useContext(LanguageContext);
@@ -23,7 +24,7 @@ const HorizonsNepal = () => {
   );
 };
 
-export const Header = ({ menuOpen, setMenuOpen }) => {
+export const Header = ({ menuOpen, setMenuOpen, setLocale }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
     <Stack
@@ -38,7 +39,10 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
       position="sticky"
       top="0"
     >
-      <HorizonsNepal />
+      <Stack direction="row" spacing={3}>
+        <HorizonsNepal />
+        <LanguageSwitcher setLocale={setLocale} />
+      </Stack>
       {isMobile ? (
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : (
