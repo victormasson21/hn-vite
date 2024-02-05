@@ -10,7 +10,7 @@ import { StyledBlock } from "./components/StyledBlock.jsx";
 import BackgroundImage from "./assets/background.png";
 import { Header } from "./components/Header.jsx";
 
-export const LanguageContext = createContext("EN");
+export const LanguageContext = createContext("FR");
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const App = () => {
 
   const [locale, setLocale] = useState(() => {
     const savedLocale = localStorage.getItem("hnlocale");
-    return savedLocale || "EN";
+    return savedLocale || "FR";
   });
 
   useEffect(() => {
