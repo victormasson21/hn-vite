@@ -21,7 +21,7 @@ export const Content = () => {
   const locale = useContext(LanguageContext);
   const keys = Object.keys(contentMap);
   return (
-    <Stack spacing={32}>
+    <Stack spacing={24}>
       {keys.map((key) => {
         const { title, displayTitle, component } = contentMap[key];
         return (
