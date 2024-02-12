@@ -51,7 +51,7 @@ export const Projet = () => {
         }
       </Heading>
       <UnorderedList>
-        <ListItem>
+        <ListItem textAlign="justify">
           {
             {
               FR: "Financer la rénovation des salles du New Sauraha Day Care Center, et la construction d'une nouvelle salle de classe.",
@@ -59,7 +59,7 @@ export const Projet = () => {
             }[locale]
           }
         </ListItem>
-        <ListItem>
+        <ListItem textAlign="justify">
           {
             {
               FR: "Payer le salaire de 7 membres du personnel (3 professeur des écoles, 3 assistants d'éducation, un personnel de surface/cantine) qui permettra de faire fonctionner les trois niveaux (1 classe d'environ 30 à 35 élèves par niveau).",
