@@ -17,7 +17,7 @@ export const Futur = () => {
         }
       </Heading>
       <UnorderedList>
-        <ListItem>
+        <ListItem textAlign="justify">
           {
             {
               FR: "Ce dernier impliquera alors la mairie du village, en tant que troisième partie prenante et potentielle force de financement. Nous verrons, dans cette seconde étape, si Horizons Népal et ses membres et donateurs ont la capacité de changer l'échelle afin de rouvrir l'école de Bacchauli. Cela implique d'augmenter financement, dans la durée, car il s'agit de soutenir 6 autres niveaux de la pyramide éducative du système publique népalais, jusqu'à l'équivalent de la seconde en France.",
@@ -25,7 +25,7 @@ export const Futur = () => {
             }[locale]
           }
         </ListItem>
-        <ListItem>
+        <ListItem textAlign="justify">
           {
             {
               FR: "Nous chercherons à créer des liens culturels entre les membres de l’'association et le villageois de Bacchauli, ainsi qu'entre l'école du village et des écoles primaires en France. Ces échanges prendront la forme de voyages culturels, d'échanges épistolaires (numériques ou postaux).",
