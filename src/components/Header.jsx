@@ -1,4 +1,4 @@
-import { Heading, Image, Stack, useMediaQuery } from "@chakra-ui/react";
+import { Heading, Image, Link, Stack, useMediaQuery } from "@chakra-ui/react";
 import Placeholder from "../assets/placeholder.png";
 import { MobileMenu } from "./MobileMenu";
 import { Donner } from "./Donner";
@@ -10,17 +10,23 @@ const HorizonsNepal = () => {
   const locale = useContext(LanguageContext);
 
   return (
-    <Stack direction="row" align="center" spacing={4} cursor="pointer">
-      <Image src={Placeholder} height="40px" />
-      <Heading as="h2" size="xl" mb={0}>
-        {
+    <Link
+      href="/"
+      sx={{ textDecoration: "none" }}
+      _hover={{ textDecoration: "none" }}
+    >
+      <Stack direction="row" align="center" spacing={4} cursor="pointer">
+        <Image src={Placeholder} height="40px" />
+        <Heading as="h2" size="xl" mb={0}>
           {
-            FR: "Horizons Népal",
-            EN: "Horizons Nepal",
-          }[locale]
-        }
-      </Heading>
-    </Stack>
+            {
+              FR: "Horizons Népal",
+              EN: "Horizons Nepal",
+            }[locale]
+          }
+        </Heading>
+      </Stack>
+    </Link>
   );
 };
 
