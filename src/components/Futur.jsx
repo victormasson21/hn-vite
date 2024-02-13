@@ -1,4 +1,10 @@
-import { Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
+import {
+  Heading,
+  Image,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import image from "../assets/horizon-nepal-futur.jpeg";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
@@ -17,21 +23,25 @@ export const Futur = () => {
         }
       </Heading>
       <UnorderedList>
-        <ListItem textAlign="justify">
-          {
+        <ListItem>
+          <Text>
             {
-              FR: "Ce dernier impliquera alors la mairie du village, en tant que troisième partie prenante et potentielle force de financement. Nous verrons, dans cette seconde étape, si Horizons Népal et ses membres et donateurs ont la capacité de changer l'échelle afin de rouvrir l'école de Bacchauli. Cela implique d'augmenter financement, dans la durée, car il s'agit de soutenir 6 autres niveaux de la pyramide éducative du système publique népalais, jusqu'à l'équivalent de la seconde en France.",
-              EN: "The latter will then involve the village town hall, as a third stakeholder and potential financing force. We will see, in this second stage, if Horizons Nepal and its members and donors have the capacity to change the scale in order to reopen the Bacchauli school. This implies increasing funding, over time, because it involves supporting 6 other levels of the educational pyramid of the Nepalese public system, up to the equivalent of the second in France.",
-            }[locale]
-          }
+              {
+                FR: "Ce dernier impliquera alors la mairie du village en tant que troisième partie prenante et potentielle force de financement. Nous verrons, dans cette seconde étape, si Horizons Népal et ses membres et donateurs ont la capacité de changer l'échelle afin de rouvrir l'école de Bacchauli. Cela impliquera d'augmenter le financement dans la durée, car il s'agit de soutenir six autres niveaux de la pyramide éducative du système public népalais, jusqu'à l'équivalent de la seconde en France.",
+                EN: "The latter will then involve the village town hall, as a third stakeholder and potential financing force. We will see, in this second stage, if Horizons Nepal and its members and donors have the capacity to change the scale in order to reopen the Bacchauli school. This implies increasing funding, over time, because it involves supporting 6 other levels of the educational pyramid of the Nepalese public system, up to the equivalent of the second in France.",
+              }[locale]
+            }
+          </Text>
         </ListItem>
-        <ListItem textAlign="justify">
-          {
+        <ListItem>
+          <Text>
             {
-              FR: "Nous chercherons à créer des liens culturels entre les membres de l’'association et le villageois de Bacchauli, ainsi qu'entre l'école du village et des écoles primaires en France. Ces échanges prendront la forme de voyages culturels, d'échanges épistolaires (numériques ou postaux).",
-              EN: "We will seek to create cultural links between the members of the association and the villagers of Bacchauli, as well as between the village school and primary schools in France. These exchanges will take the form of cultural trips and epistolary exchanges (digital or postal).",
-            }[locale]
-          }
+              {
+                FR: "Nous chercherons à créer des liens culturels entre les membres de l’association et les villageoises et villageois de Bacchauli, ainsi qu'entre l'école du village et des écoles primaires en France. Ces échanges prendront la forme de voyages culturels, d'échanges épistolaires (numériques ou postaux).",
+                EN: "We will seek to create cultural links between the members of the association and the villagers of Bacchauli, as well as between the village school and primary schools in France. These exchanges will take the form of cultural trips and epistolary exchanges (digital or postal).",
+              }[locale]
+            }
+          </Text>
         </ListItem>
       </UnorderedList>
       <Image
