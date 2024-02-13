@@ -6,6 +6,7 @@ import {
   Heading,
   Image,
   Stack,
+  Link,
   Text,
   useTheme,
 } from "@chakra-ui/react";
@@ -65,7 +66,15 @@ export const Team = () => {
   } = useTheme();
 
   return (
-    <Stack divider={<Divider />}>
+    <Stack>
+      <Text my={0}>
+        {
+          {
+            FR: "Cliquez sur les photos pour en savoir plus:",
+            EN: "Click the pictures to learn more:",
+          }[locale]
+        }
+      </Text>
       <Box
         sx={{
           display: "grid",
@@ -105,8 +114,9 @@ export const Team = () => {
           );
         })}
       </Box>
+      <Divider />
       <Box mt={4}>
-        <Heading as="h2" size="sm">
+        <Heading as="h2" size="sm" id="bio">
           {displayedMembre}
         </Heading>
         <Text fontStyle="italic">{team[displayedMembre].text[locale]}</Text>
