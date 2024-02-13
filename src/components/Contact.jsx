@@ -29,28 +29,46 @@ export const Contact = () => {
       {
         {
           FR: (
-            <Text>
-              Vous pouvez retrouver{" "}
-              <Link
-                href="https://www.helloasso.com/associations/horizons-nepal"
-                isExternal
-              >
-                notre campagne de financement ici
-              </Link>{" "}
-              si vous souhaitez nous rejoindre dans notre aventure !
-            </Text>
+            <>
+              <Text>
+                Vous pouvez retrouver{" "}
+                <Link
+                  href="https://www.helloasso.com/associations/horizons-nepal"
+                  isExternal
+                >
+                  notre campagne de financement ici
+                </Link>{" "}
+                si vous souhaitez nous rejoindre dans notre aventure !
+              </Text>
+              <Text>
+                Suivez le New Sauraha Day Care Centre{" "}
+                <Link href="https://www.facebook.com/people/New-sauraha-daycare-centre/100067792186502/">
+                  sur Facebook
+                </Link>
+                .
+              </Text>
+            </>
           ),
           EN: (
-            <Text>
-              You can find{" "}
-              <Link
-                href="https://www.helloasso.com/associations/horizons-nepal"
-                isExternal
-              >
-                our fundraising campaign here
-              </Link>{" "}
-              if you want to join us on our adventure!
-            </Text>
+            <>
+              <Text>
+                You can find{" "}
+                <Link
+                  href="https://www.helloasso.com/associations/horizons-nepal"
+                  isExternal
+                >
+                  our fundraising campaign here
+                </Link>{" "}
+                if you want to join us on our adventure!
+              </Text>
+              <Text>
+                Follow the New Sauraha Day Care Centre{" "}
+                <Link href="https://www.facebook.com/people/New-sauraha-daycare-centre/100067792186502/">
+                  on Facebook
+                </Link>
+                .
+              </Text>
+            </>
           ),
         }[locale]
       }
