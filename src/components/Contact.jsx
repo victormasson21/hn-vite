@@ -32,10 +32,7 @@ export const Contact = () => {
             <>
               <Text>
                 Vous pouvez retrouver{" "}
-                <Link
-                  href="https://www.helloasso.com/associations/horizons-nepal"
-                  isExternal
-                >
+                <Link href="https://bit.ly/HorizonsNepalDonate" isExternal>
                   notre campagne de financement ici
                 </Link>{" "}
                 si vous souhaitez nous rejoindre dans notre aventure !
@@ -53,10 +50,7 @@ export const Contact = () => {
             <>
               <Text>
                 You can find{" "}
-                <Link
-                  href="https://www.helloasso.com/associations/horizons-nepal"
-                  isExternal
-                >
+                <Link href="https://bit.ly/HorizonsNepalDonate" isExternal>
                   our fundraising campaign here
                 </Link>{" "}
                 if you want to join us on our adventure!
