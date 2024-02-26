@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { LanguageContext } from "../App";
 import {
   Box,
@@ -10,6 +10,8 @@ import {
   useTheme,
 } from "@chakra-ui/react";
 
+import Runa from "../assets/profiles/Runa.jpeg";
+import Sanjaya from "../assets/profiles/Sanjaya.jpeg";
 import Romain from "../assets/profiles/Romain.jpg";
 import Antoine from "../assets/profiles/Antoine.jpg";
 import Lucie from "../assets/profiles/Lucie.jpg";
@@ -17,6 +19,27 @@ import Quentin from "../assets/profiles/Quentin.jpg";
 import MicheleBernard from "../assets/profiles/MicheleBernard.jpg";
 
 const team = {
+  Runa: {
+    text: {
+      FR: "Runa Chaudhary est née et a grandi à Chitwan, en tant que Tharu, le groupe indigène du Térai népalais. Elle a étudié la démographie et l'économie à l'université. Actuellement, elle dirige le Tharu Ethnic Resort and Food Hub, une maison d'hôtes Tharu située à proximité du parc national de Chitwan. Elle est également présidente de Tharu Community Women's Hand, organisation sœur d'Horizons Népal. Il s'agit d'une entreprise caritative qui organise une formation professionnelle pour les femmes, aide les femmes à créer et gérer des entreprises et relie leurs produits au marché.",
+      EN: "Runa Chaudhary was born and raised Chitwan, as a Tharu, the indigenous group of the Nepalese’s Taraï. She studied demography and economics in university. Currently, she is running the Tharu Ethnic Resort and Food Hub - an ethnic guesthouse in the vicinity of Chitwan National Park. She also is the president of Tharu Community Women's Hand, Horizons Nepal sister organization. This is a charity enterprise that organizes skill-based training for women, helps women initiate and establish enterprises, and links the products of women to the market.",
+    },
+    image: Runa,
+  },
+  Sanjaya: {
+    text: {
+      FR: "Sanjaya Mahato est actuellement professeur à l'Université de Katmandou, au département des politiques publiques. Après ses études supérieures en Europe, il est de retour au Népal et travaille en tant que conseiller législatif au Parlement. Outre ses travaux universitaires, il est impliqué dans plusieurs activités sociales, notamment l'amélioration du secteur éducatif au Népal. Il cherche à constuire une éducation secondaire de qualité pour les communautés vulnérables au Népal (communautés autochtones, Dalits et filles) et en garantissant leurs droits à une éducation de qualité.",
+      EN: "Sanjaya Mahato is currently a faculty at Kathmandu University, Department of Public Policy, Kathmandu Nepal. After his higher education in Europe, he is back to Nepal and has been involved in policy research in the parliament. Beside his academic works, he is involved in several social activities particularly in improving education sector in Nepal - ensuring quality education in secondary school, reaching vulnerable communities (Indigenous communities and Dalits, and girls) and ensuring their rights for quality education.",
+    },
+    image: Sanjaya,
+  },
+  Romain: {
+    text: {
+      FR: "Chercheur en sciences sociales, avec une passion particulière pour les questions liées à l’eau. Je suis très attaché aux dimensions émancipatrices de mon travail, notamment lorsqu’il s’agit de transmettre du savoir. J’ai fait ma thèse de doctorat au Népal. J’ai laissé dans ce pays un bout de mon cœur, et y fais des ami.es. C’est un pays ou la vie est, malheureusement, encore d’une fragile beauté. J’ai décidé de contribuer, un peu, par la solidarité, à ouvrir le spectre des possibles des enfants de cet endroit.",
+      EN: "Researcher in social sciences, with a particular passion for water-related issues. I am very attached to the emancipatory dimensions of my work, especially when it comes to transmitting knowledge. I did my doctoral thesis in Nepal. I left a piece of my heart in this country, and made friends there. It is a country where life is, unfortunately, still of a fragile beauty. I decided to contribute, a little, through solidarity, to open up the spectrum of possibilities for the children of this place.",
+    },
+    image: Romain,
+  },
   Antoine: {
     text: {
       FR: "Technicien dans la construction bois, j’ai beaucoup voyagé, en particulier au Moyen et Extrême-Orient et en Asie centrale. Lors de mes voyages, j’ai été touché par les inégalités inhérentes à ces régions, notamment celles touchant à l’accès à l’éducation. J’ai rencontré Romain en 2018 alors qu’il travaillait sur sa thèse de doctorat au Népal et notre amitié est née d’intérêts partagés. Aujourd’hui, je soutiens activement Romain dans son action en faveur d’une plus grande égalité des chances.",
@@ -46,13 +69,6 @@ const team = {
     },
     image: Quentin,
   },
-  Romain: {
-    text: {
-      FR: "Chercheur en sciences sociales, avec une passion particulière pour les questions liées à l’eau. Je suis très attaché aux dimensions émancipatrices de mon travail, notamment lorsqu’il s’agit de transmettre du savoir. J’ai fait ma thèse de doctorat au Népal. J’ai laissé dans ce pays un bout de mon cœur, et y fais des ami.es. C’est un pays ou la vie est, malheureusement, encore d’une fragile beauté. J’ai décidé de contribuer, un peu, par la solidarité, à ouvrir le spectre des possibles des enfants de cet endroit.",
-      EN: "Researcher in social sciences, with a particular passion for water-related issues. I am very attached to the emancipatory dimensions of my work, especially when it comes to transmitting knowledge. I did my doctoral thesis in Nepal. I left a piece of my heart in this country, and made friends there. It is a country where life is, unfortunately, still of a fragile beauty. I decided to contribute, a little, through solidarity, to open up the spectrum of possibilities for the children of this place.",
-    },
-    image: Romain,
-  },
 };
 
 const membres = Object.keys(team);
@@ -63,6 +79,7 @@ export const Team = () => {
   const {
     colors: { text },
   } = useTheme();
+  const bioText = useRef();
 
   return (
     <Stack>
@@ -98,7 +115,10 @@ export const Team = () => {
                       ? `5px 5px ${text.dark}`
                       : "none",
                 }}
-                onClick={() => setDisplayedMembre(member)}
+                onClick={() => {
+                  setDisplayedMembre(member);
+                  bioText.current.scrollIntoView({ behavior: "smooth" });
+                }}
                 alt={
                   {
                     FR: `Photo de profil de ${member}`,
@@ -113,7 +133,7 @@ export const Team = () => {
           );
         })}
       </Box>
-      <Divider />
+      <Divider ref={bioText} />
       <Box mt={4}>
         <Heading as="h2" size="sm" id="bio">
           {displayedMembre}
