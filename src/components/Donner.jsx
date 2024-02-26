@@ -10,7 +10,7 @@ export const Donner = () => {
   } = useTheme();
   return (
     <Link
-      href="https://www.helloasso.com/associations/horizons-nepal"
+      href="https://bit.ly/HorizonsNepalDonate"
       target="_none"
       sx={{ textDecoration: "none" }}
     >
