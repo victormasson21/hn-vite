@@ -38,4 +38,9 @@ export const contentMap = {
     displayTitle: true,
     component: <Contact />,
   },
+  // media: {
+  //   title: {FR: "On parle de nous", EN: "In the media"},
+  //   displayTitle: true,
+  //   component: <Media />,
+  // }
 };
