@@ -5,6 +5,7 @@ import { Team } from "./components/Team.jsx";
 import { Projet } from "./components/Projet.jsx";
 import { Futur } from "./components/Futur.jsx";
 import { Contact } from "./components/Contact.jsx";
+import { Media } from "./components/Media.jsx";
 
 export const contentMap = {
   home: { title: "Intro", displayTitle: false, component: <Home /> },
@@ -38,9 +39,9 @@ export const contentMap = {
     displayTitle: true,
     component: <Contact />,
   },
-  // media: {
-  //   title: {FR: "On parle de nous", EN: "In the media"},
-  //   displayTitle: true,
-  //   component: <Media />,
-  // }
+  media: {
+    title: { FR: "Médias", EN: "Media" },
+    displayTitle: true,
+    component: <Media />,
+  },
 };
