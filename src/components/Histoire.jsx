@@ -11,8 +11,8 @@ export const Histoire = () => {
       <Heading as="h3" size="md">
         {
           {
-            FR: "L'association Horizons Népal a été créée afin de soutenir le droit à l'éducation d'enfants de familles défavorisées du village de Bacchaulidans le district de Chitwan au Népal.",
-            EN: "Horizons Nepal was created to support the right to education of children from disadvantaged families in the village of Jankauli in the Chitwan district of Nepal.",
+            FR: "L'association Horizons Népal a été créée afin de soutenir le droit à l'éducation d'enfants de familles défavorisées du village de Bacchauli, dans le district de Chitwan, au Népal.",
+            EN: "Horizons Nepal was created to support the right to education of children from disadvantaged families in the village of Bacchauli, in the Chitwan district of Nepal.",
           }[locale]
         }
       </Heading>
