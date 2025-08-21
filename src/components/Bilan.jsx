@@ -1,8 +1,14 @@
 import {
+  Image,
   Text,
 } from "@chakra-ui/react";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
+import { Gallery } from "./Gallery";
+import besoinsfinanciers from "../assets/besoins-financiers-2025.png";
+import partenariat1 from "../assets/partenariat/partenariat-1.jpg";
+import partenariat2 from "../assets/partenariat/partenariat-2.jpg";
+import partenariat3 from "../assets/partenariat/partenariat-3.png";
 
 export const Bilan = () => {
   const locale = useContext(LanguageContext);
@@ -25,6 +31,7 @@ export const Bilan = () => {
           }[locale]
         }
       </Text>
+      <Gallery />
       <Text mb={4}>
         {
           {
@@ -41,6 +48,17 @@ export const Bilan = () => {
           }[locale]
         }
       </Text>
+       <Image
+              src={besoinsfinanciers}
+              my={4}
+              borderRadius="10px"
+              alt={
+                {
+                  FR: "Tableau récapitulatif des besoins financiers pour 2025",
+                  EN: "Summary table of financial needs for 2025",
+                }[locale]
+              }
+            />
       <Text mb={4}>
         {
           {
@@ -57,7 +75,7 @@ export const Bilan = () => {
           }[locale]
         }
       </Text>
-      <Text>
+      <Text mb={4}>
         {
           {
             FR: "Un projet a démarré avec l'école primaire des Leins dans le village de Montagnac qui a pris la forme d'échanges de lettres, de dessins entre les élèves. Récemment, les élèves de Montagnac (30) ont aussi contribué à la levée de fond en créant des cartes et en cuisinant des gâteaux, qu'ils ont vendu à Noël dernier dans le village. Nous avons pour ambition de le dupliquer avec l'école primaire d'ASSAS (34) siège de l'association pour la rentrée 2025.",
@@ -65,6 +83,15 @@ export const Bilan = () => {
           }[locale]
         }
       </Text>
+      <Gallery 
+        images={[partenariat1, partenariat2, partenariat3]} 
+        altPrefix={
+          {
+            FR: "Partenariat",
+            EN: "Partnership"
+          }[locale]
+        }
+      />
     </>
   );
 };
