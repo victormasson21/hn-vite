@@ -1,5 +1,5 @@
 import { Heading, Image, Text } from "@chakra-ui/react";
-import image from "../assets/horizon-nepal-association.jpeg";
+import image from "../assets/horizon-nepal-association.webp";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 

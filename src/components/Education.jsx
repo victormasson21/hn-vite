@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 import { Image, Text, Heading } from "@chakra-ui/react";
-import image from "../assets/horizon-nepal-education.jpeg";
+import image from "../assets/horizon-nepal-education.webp";
 
 export const Education = () => {
   const locale = useContext(LanguageContext);

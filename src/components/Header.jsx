@@ -1,5 +1,5 @@
 import { Heading, Image, Link, Stack, useMediaQuery } from "@chakra-ui/react";
-import Placeholder from "../assets/placeholder.png";
+import Placeholder from "../assets/placeholder.webp";
 import { MobileMenu } from "./MobileMenu";
 import { Donner } from "./Donner";
 import { useContext } from "react";

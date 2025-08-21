@@ -7,7 +7,7 @@ import { MenuContent } from "./components/MenuContent.jsx";
 import { Donner } from "./components/Donner.jsx";
 import { StyledBlock } from "./components/StyledBlock.jsx";
 
-import BackgroundImage from "./assets/background.png";
+import BackgroundImage from "./assets/background.webp";
 import { Header } from "./components/Header.jsx";
 
 export const LanguageContext = createContext("FR");
@@ -15,6 +15,7 @@ export const LanguageContext = createContext("FR");
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [backgroundLoaded, setBackgroundLoaded] = useState(false);
 
   const [locale, setLocale] = useState(() => {
     const savedLocale = localStorage.getItem("hnlocale");
@@ -25,6 +26,12 @@ const App = () => {
     localStorage.setItem("hnlocale", locale);
   }, [locale]);
 
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setBackgroundLoaded(true);
+    img.src = BackgroundImage;
+  }, []);
+
   return (
     <LanguageContext.Provider value={locale}>
       <Box
@@ -32,13 +39,15 @@ const App = () => {
         height="100vh"
         position="absolute"
         inset="0"
-        bgImage={BackgroundImage}
+        bgImage={backgroundLoaded ? BackgroundImage : undefined}
         bgPosition="center"
         bgSize="cover"
         bgRepeat="no-repeat"
+        bg={backgroundLoaded ? undefined : "#cfdbe1"}
         overflow="scroll"
         pt={[4, 8]}
         px={[4, 8, 16]}
+        transition="background-image 0.3s ease-in-out"
       >
         <Stack width="100%" height="100%" gap={0}>
           <Header

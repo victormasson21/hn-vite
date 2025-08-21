@@ -1,5 +1,5 @@
 import { Image, Heading, Text } from "@chakra-ui/react";
-import image from "../assets/map.png";
+import image from "../assets/map.webp";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 

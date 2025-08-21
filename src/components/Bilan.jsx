@@ -5,10 +5,10 @@ import {
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 import { Gallery } from "./Gallery";
-import besoinsfinanciers from "../assets/besoins-financiers-2025.png";
-import partenariat1 from "../assets/partenariat/partenariat-1.jpg";
-import partenariat2 from "../assets/partenariat/partenariat-2.jpg";
-import partenariat3 from "../assets/partenariat/partenariat-3.png";
+import besoinsfinanciers from "../assets/besoins-financiers-2025.webp";
+import partenariat1 from "../assets/partenariat/partenariat-1.webp";
+import partenariat2 from "../assets/partenariat/partenariat-2.webp";
+import partenariat3 from "../assets/partenariat/partenariat-3.webp";
 
 export const Bilan = () => {
   const locale = useContext(LanguageContext);

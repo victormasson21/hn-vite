@@ -5,8 +5,8 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import image from "../assets/horizon-nepal-projet.jpeg";
-import diagram from "../assets/diagram.png";
+import image from "../assets/horizon-nepal-projet.webp";
+import diagram from "../assets/diagram.webp";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 

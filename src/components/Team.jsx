@@ -10,13 +10,13 @@ import {
   useTheme,
 } from "@chakra-ui/react";
 
-import Runa from "../assets/profiles/Runa.jpeg";
-import Sanjaya from "../assets/profiles/Sanjaya.jpeg";
-import Romain from "../assets/profiles/Romain.jpg";
-import Antoine from "../assets/profiles/Antoine.jpg";
-import Lucie from "../assets/profiles/Lucie.jpg";
-import Quentin from "../assets/profiles/Quentin.jpg";
-import MicheleBernard from "../assets/profiles/MicheleBernard.jpg";
+import Runa from "../assets/profiles/Runa.webp";
+import Sanjaya from "../assets/profiles/Sanjaya.webp";
+import Romain from "../assets/profiles/Romain.webp";
+import Antoine from "../assets/profiles/Antoine.webp";
+import Lucie from "../assets/profiles/Lucie.webp";
+import Quentin from "../assets/profiles/Quentin.webp";
+import MicheleBernard from "../assets/profiles/MicheleBernard.webp";
 
 const team = {
   Runa: {

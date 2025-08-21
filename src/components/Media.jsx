@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../App";
 import { Box, Image, Stack, Link, useTheme } from "@chakra-ui/react";
 
-import MidiLibre from "../assets/medias/midi-libre.png";
+import MidiLibre from "../assets/medias/midi-libre.webp";
 import DivergenceFM from "../assets/medias/divergence-fm.svg";
 
 const media = {
