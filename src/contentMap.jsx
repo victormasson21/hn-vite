@@ -7,6 +7,7 @@ import { Bilan } from "./components/Bilan.jsx";
 import { Futur } from "./components/Futur.jsx";
 import { Contact } from "./components/Contact.jsx";
 import { Media } from "./components/Media.jsx";
+import { News } from "./components/News.jsx";
 
 export const contentMap = {
   home: { title: "Intro", displayTitle: false, component: <Home /> },
@@ -29,6 +30,11 @@ export const contentMap = {
     title: { FR: "Bilan 2025", EN: "Assessment 2025" },
     displayTitle: true,
     component: <Bilan />,
+  },
+  news: {
+    title: { FR: "Actualités", EN: "News" },
+    displayTitle: true,
+    component: <News />,
   },
   future: {
     title: { FR: "Le futur", EN: "What comes next" },
