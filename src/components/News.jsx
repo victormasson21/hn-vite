@@ -75,7 +75,12 @@ export const News = () => {
           size="xl"
         >
           <ModalOverlay />
-          <ModalContent>
+          <ModalContent
+            border="2px solid"
+            borderColor="text.dark"
+            borderRadius="10px"
+            boxShadow={`3px 3px ${text.dark}`}
+          >
             <ModalHeader color="text.dark" pr={12}>
               {selected.title}
               <Text fontSize="sm" fontWeight="normal" mb={0}>
