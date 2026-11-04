@@ -1,7 +1,7 @@
 import { Heading, Link, Text } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const Contact = () => {
   const locale = useContext(LanguageContext);

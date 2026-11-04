@@ -2,7 +2,7 @@ import { Box, Heading, Stack } from "@chakra-ui/react";
 import { StyledBlock } from "./StyledBlock";
 import { contentMap } from "../contentMap";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 const ContentBlock = ({ id, title, displayTitle, children }) => {
   return (

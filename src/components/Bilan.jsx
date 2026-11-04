@@ -3,7 +3,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 import { Gallery } from "./Gallery";
 import besoinsfinanciers from "../assets/besoins-financiers-2025.webp";
 import partenariat1 from "../assets/partenariat/partenariat-1.webp";

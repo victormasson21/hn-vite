@@ -8,7 +8,7 @@ import {
 import image from "../assets/horizon-nepal-projet.webp";
 import diagram from "../assets/diagram.webp";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const Projet = () => {
   const locale = useContext(LanguageContext);

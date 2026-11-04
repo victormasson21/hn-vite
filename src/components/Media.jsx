@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 import { Box, Image, Stack, Link, useTheme } from "@chakra-ui/react";
 
 import MidiLibre from "../assets/medias/midi-libre.webp";

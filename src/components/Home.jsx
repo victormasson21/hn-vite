@@ -1,7 +1,7 @@
 import { Image, Heading, Text } from "@chakra-ui/react";
 import image from "../assets/map.webp";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const Home = () => {
   const locale = useContext(LanguageContext);

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Box, Stack, useMediaQuery } from "@chakra-ui/react";
 
@@ -9,8 +9,7 @@ import { StyledBlock } from "./components/StyledBlock.jsx";
 
 import BackgroundImage from "./assets/background.webp";
 import { Header } from "./components/Header.jsx";
-
-export const LanguageContext = createContext("FR");
+import { LanguageContext } from "./languageContext.js";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);

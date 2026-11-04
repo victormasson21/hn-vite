@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 import { Image, Text, Heading } from "@chakra-ui/react";
 import image from "../assets/horizon-nepal-education.webp";
 

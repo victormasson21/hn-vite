@@ -1,7 +1,7 @@
 import { Heading, Link, List, ListItem, useMediaQuery } from "@chakra-ui/react";
 import { contentMap } from "../contentMap";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const MenuContent = ({ setMenuOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");

@@ -1,7 +1,7 @@
 import { Heading, Image, Text } from "@chakra-ui/react";
 import image from "../assets/horizon-nepal-futur.webp";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const Futur = () => {
   const locale = useContext(LanguageContext);

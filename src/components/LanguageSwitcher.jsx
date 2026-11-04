@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const LanguageSwitcher = ({ setLocale }) => {
   const locale = useContext(LanguageContext);

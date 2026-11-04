@@ -1,7 +1,7 @@
 import { Box, Button, Link, useTheme } from "@chakra-ui/react";
 import { Heart } from "../assets/Heart.jsx";
 import { useContext } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 
 export const Donner = () => {
   const locale = useContext(LanguageContext);

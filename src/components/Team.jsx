@@ -1,5 +1,5 @@
 import { useState, useContext, useRef } from "react";
-import { LanguageContext } from "../App";
+import { LanguageContext } from "../languageContext";
 import {
   Box,
   Divider,
