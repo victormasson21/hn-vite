@@ -43,8 +43,6 @@ export const Header = ({ menuOpen, setMenuOpen, setLocale }) => {
       align="center"
       borderBottom="2px solid"
       borderColor="text.dark"
-      position="sticky"
-      top="0"
     >
       <Stack direction="row" spacing={3}>
         <HorizonsNepal />

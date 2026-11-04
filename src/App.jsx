@@ -4,7 +4,7 @@ import { Box, Stack, useMediaQuery } from "@chakra-ui/react";
 
 import { Content } from "./components/Content.jsx";
 import { MenuContent } from "./components/MenuContent.jsx";
-import { Donner } from "./components/Donner.jsx";
+import { Footer } from "./components/Footer.jsx";
 import { StyledBlock } from "./components/StyledBlock.jsx";
 
 import BackgroundImage from "./assets/background.webp";
@@ -36,55 +36,54 @@ const App = () => {
       <Box
         width="100%"
         height="100vh"
+        sx={{ "@supports (height: 100dvh)": { height: "100dvh" } }}
         position="absolute"
         inset="0"
+        display="flex"
+        flexDirection="column"
         bgImage={backgroundLoaded ? BackgroundImage : undefined}
         bgPosition="center"
         bgSize="cover"
         bgRepeat="no-repeat"
         bg={backgroundLoaded ? undefined : "#cfdbe1"}
-        overflow="scroll"
         pt={[4, 8]}
         px={[4, 8, 16]}
         transition="background-image 0.3s ease-in-out"
       >
-        <Stack width="100%" height="100%" gap={0}>
-          <Header
-            menuOpen={menuOpen}
-            setMenuOpen={setMenuOpen}
-            setLocale={setLocale}
-          />
+        <Header
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          setLocale={setLocale}
+        />
 
-          <Stack
-            spacing={8}
-            pt={isMobile ? 4 : 8}
-            pb={8}
-            justify="space-between"
-            direction={isMobile ? "column" : "row"}
-            align={isMobile ? "center" : "flex-start"}
-            height={isMobile ? "100%" : "auto"}
-            overflow="scroll"
-          >
-            <Box>
-              {isMobile && menuOpen ? (
-                <StyledBlock>
-                  <MenuContent setMenuOpen={setMenuOpen} />
-                </StyledBlock>
-              ) : (
-                <Content menuOpen={menuOpen} />
-              )}
-            </Box>
-            {isMobile ? (
-              <Box pb={16}>
-                <Donner />
-              </Box>
-            ) : (
-              <Box position="sticky" top={0} pr={4}>
+        <Stack
+          flex={1}
+          minHeight={0}
+          overflow="auto"
+          spacing={8}
+          pt={isMobile ? 4 : 8}
+          pb={8}
+          justify="space-between"
+          direction={isMobile ? "column" : "row"}
+          align={isMobile ? "center" : "flex-start"}
+        >
+          <Box>
+            {isMobile && menuOpen ? (
+              <StyledBlock>
                 <MenuContent setMenuOpen={setMenuOpen} />
-              </Box>
+              </StyledBlock>
+            ) : (
+              <Content menuOpen={menuOpen} />
             )}
-          </Stack>
+          </Box>
+          {isMobile ? null : (
+            <Box position="sticky" top={0} pr={4}>
+              <MenuContent setMenuOpen={setMenuOpen} />
+            </Box>
+          )}
         </Stack>
+
+        {isMobile ? <Footer /> : null}
       </Box>
     </LanguageContext.Provider>
   );
