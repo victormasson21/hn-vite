@@ -1,7 +1,7 @@
 export const newsletters = [
   {
     date: "2025-10-21",
-    title: "De bonnes nouvelles des nos actions !",
+    title: "De bonnes nouvelles de nos actions !",
     paragraphs: [
       "Chers et chères ami-es et néanmoins donatrices et donateurs 🙂,",
       [
