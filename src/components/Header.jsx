@@ -18,7 +18,7 @@ const HorizonsNepal = () => {
     >
       <Stack direction="row" align="center" spacing={4} cursor="pointer">
         <Image src={Placeholder} height="40px" />
-        <Heading as="h2" size="xl" mb={0}>
+        <Heading as="h2" size="lg" mb={0}>
           {
             {
               FR: "Horizons Népal",
