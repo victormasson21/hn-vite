@@ -5,6 +5,7 @@ import { Donner } from "./Donner";
 import { useContext } from "react";
 import { LanguageContext } from "../App";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { SocialLinks } from "./SocialLinks";
 
 const HorizonsNepal = () => {
   const locale = useContext(LanguageContext);
@@ -52,7 +53,10 @@ export const Header = ({ menuOpen, setMenuOpen, setLocale }) => {
       {isMobile ? (
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : (
-        <Donner />
+        <Stack direction="row" spacing={6} align="center">
+          <SocialLinks />
+          <Donner />
+        </Stack>
       )}
     </Stack>
   );

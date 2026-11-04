@@ -6,7 +6,7 @@ import { LanguageContext } from "../App";
 export const Donner = () => {
   const locale = useContext(LanguageContext);
   const {
-    colors: { text },
+    colors: { accent },
   } = useTheme();
   return (
     <Link
@@ -17,9 +17,11 @@ export const Donner = () => {
       <Button
         variant="outline"
         bgColor="gray.100"
+        color="accent.red"
+        borderColor="accent.red"
         rightIcon={
           <Box pt={1 / 2}>
-            <Heart fill={text.dark} />
+            <Heart fill={accent.red} />
           </Box>
         }
       >

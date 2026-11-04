@@ -5,6 +5,9 @@ export const theme = extendTheme({
     text: {
       dark: "#103a55",
     },
+    accent: {
+      red: "#c0392b",
+    },
   },
   fonts: {
     heading: `'Salsa', sans-serif`,
