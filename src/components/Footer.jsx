@@ -11,7 +11,7 @@ export const Footer = () => (
     borderTop="2px solid"
     borderColor="text.dark"
   >
-    <SocialLinks />
+    <SocialLinks color="white" />
     <Donner />
   </Stack>
 );

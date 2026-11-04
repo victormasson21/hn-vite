@@ -25,7 +25,7 @@ const socialLinks = [
   },
 ];
 
-export const SocialLinks = () => (
+export const SocialLinks = ({ color = "text.dark" }) => (
   <Stack direction="row" spacing={4} align="center">
     {socialLinks.map(({ label, href, Icon }) => (
       <Link
@@ -36,7 +36,7 @@ export const SocialLinks = () => (
         display="flex"
         _hover={{ opacity: 0.6 }}
       >
-        <Icon color="text.dark" boxSize={6} />
+        <Icon color={color} boxSize={6} />
       </Link>
     ))}
   </Stack>
