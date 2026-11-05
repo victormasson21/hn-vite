@@ -11,7 +11,7 @@ export const Donner = () => {
   return (
     <Link
       href="https://bit.ly/HorizonsNepalDonate"
-      target="_none"
+      isExternal
       sx={{ textDecoration: "none" }}
     >
       <Button

@@ -17,7 +17,7 @@ const HorizonsNepal = () => {
       _hover={{ textDecoration: "none" }}
     >
       <Stack direction="row" align="center" spacing={4} cursor="pointer">
-        <Image src={Placeholder} height="40px" />
+        <Image src={Placeholder} height="40px" alt="" />
         <Heading as="h2" size="lg" mb={0}>
           {
             {

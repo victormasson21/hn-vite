@@ -2,7 +2,6 @@
   "name": "horizon-nepal-vite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://victormasson21.github.io/hn-vite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,14 +16,12 @@
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.17.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-transition-group": "^4.4.5"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",

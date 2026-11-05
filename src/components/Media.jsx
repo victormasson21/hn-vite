@@ -49,7 +49,7 @@ export const Media = () => {
                   boxShadow: `5px 5px ${text.dark}`,
                 },
               }}
-              target="_none"
+              isExternal
             >
               <Box>
                 <Image
@@ -61,8 +61,8 @@ export const Media = () => {
                   }}
                   alt={
                     {
-                      FR: `Loco de ${article}`,
-                      EN: `Profile picture of ${article}`,
+                      FR: `Logo de ${article}`,
+                      EN: `${article} logo`,
                     }[locale]
                   }
                 />

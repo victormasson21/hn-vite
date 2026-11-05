@@ -28,7 +28,7 @@ export const bilan = [
   {
     type: "text",
     FR: "Grâce aux dons (tant ponctuels que réguliers) de nos adhérents et sympathisants, nous avons pu atteindre le premier objectif 2024 : remettre en état et agrandir l'école du village de Jankauli. 12000€ ont été collectés entre février 2024 et février 2025, et l'intégralité de cette somme a été consacrée à la rénovation et l'agrandissement des bâtiments : l'école est désormais opérationnelle depuis le 1 mars 2025.",
-    EN: "Thanks to donations (both one-time and regular) from our members and supporters, we were able to achieve the first 2024 objective: renovate and expand the school in the village of Jankauli. �12,000 was collected between February 2024 and February 2025, and the entire amount was dedicated to renovating and expanding the buildings: the school has been operational since March 1, 2025.",
+    EN: "Thanks to donations (both one-time and regular) from our members and supporters, we were able to achieve the first 2024 objective: renovate and expand the school in the village of Jankauli. €12,000 was collected between February 2024 and February 2025, and the entire amount was dedicated to renovating and expanding the buildings: the school has been operational since March 1, 2025.",
   },
   {
     type: "gallery",
@@ -60,7 +60,7 @@ export const bilan = [
   {
     type: "text",
     FR: "Le tableau ci-dessous définit les besoins, soit environ 13K€ par an, dont nous cherchons à financer le maximum :",
-    EN: "The table below defines the needs, approximately �13K per year, of which we seek to finance the maximum:",
+    EN: "The table below defines the needs, approximately €13K per year, of which we seek to finance the maximum:",
   },
   {
     type: "image",
@@ -73,7 +73,7 @@ export const bilan = [
   {
     type: "text",
     FR: "Nous avons déjà pu assurer le premier trimestre et nous allons être en mesure d'assurer le second grâce à une rentrée exceptionnelle obtenue dans le cadre d'un projet RSE de l'entreprise d'un de nos membres, mais nos ressources sont incertaines pour le second semestre 2025, et nous avons besoin de plus de dons réguliers (mensuels) : l'objectif est de passer de 9 à 25 donateurs réguliers, pour un montant mensuel de 20 à 30€.",
-    EN: "We have already been able to secure the first quarter and we will be able to secure the second thanks to exceptional revenue obtained through a CSR project from one of our members' companies, but our resources are uncertain for the second semester of 2025, and we need more regular (monthly) donations: the objective is to go from 9 to 25 regular donors, for a monthly amount of �20 to 30.",
+    EN: "We have already been able to secure the first quarter and we will be able to secure the second thanks to exceptional revenue obtained through a CSR project from one of our members' companies, but our resources are uncertain for the second semester of 2025, and we need more regular (monthly) donations: the objective is to go from 9 to 25 regular donors, for a monthly amount of €20 to 30.",
   },
   {
     type: "text",

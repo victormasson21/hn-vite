@@ -7,7 +7,7 @@ export const Fonts = () => (
         font-family: 'Salsa';
         font-weight: 400;
         font-display: swap;
-        src: url('/fonts/salsa-regular-400.ttf') format('ttf');
+        src: url('/fonts/Salsa-Regular-400.ttf') format('truetype');
       }
       `}
   />

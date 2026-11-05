@@ -12,7 +12,7 @@ import { futur } from "./content/futur.js";
 
 export const contentMap = {
   home: {
-    title: "Intro",
+    title: { FR: "Accueil", EN: "Home" },
     displayTitle: false,
     component: <Section blocks={home} />,
   },

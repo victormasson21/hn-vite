@@ -1,12 +1,6 @@
 import image from "../assets/horizon-nepal-projet.webp";
 import diagram from "../assets/diagram.webp";
 
-const municipalityParagraph = {
-  type: "text",
-  FR: "Au Népal, le projet a depuis été discuté au niveau communal. Le maire s'est engagé à aider le projet si l'association peut démontrer la durabilité de son action pour les enfants lors de la première phase du projet, sur 3 ans. Cette phase devait financer le premier « étage » de la pyramide éducative de l'école du village. Dans le système éducatif népalais, ce premier étage est constitué de trois niveaux, pour les enfants de 3 à 6 ans (équivalent de notre école maternelle). Jusqu’à présent, l’école du village était gérée « aux mieux » par le New Sauraha Day Care Center en fonction des financements que la charité de Sanjay trouvait, ainsi que des dons ponctuels qui étaient faits par certains parents suffisamment « aisés », mais cela ne suffisait pas.",
-  EN: "In Nepal, the project has since been discussed at the municipal level. The mayor is committed to helping the project if the association can demonstrate the sustainability of its action for children during the first phase of the project, over 3 years. This phase was to finance the first 'floor' of the educational pyramid of the village school. In the Nepalese education system, this first floor is made up of three levels, for children aged 3 to 6 (equivalent to our kindergarten). Until now, the village school had been managed 'to the best of its ability' by the New Sauraha Day Care Center, depending on the funding that Sanjay's charity could find, as well as on one-off donations made by some parents who were sufficiently 'well-off', but this was not enough.",
-};
-
 export const projet = [
   {
     type: "text",
@@ -17,11 +11,15 @@ export const projet = [
     type: "image",
     src: image,
     alt: {
-      FR: "Une photo d'enfants jouant au New Sauraha Day Care Center",
-      EN: "A photo of children playing at the New Sauraha Day Care Center",
+      FR: "Les enfants devant le panneau du New Sauraha Day Care Center",
+      EN: "Children in front of the New Sauraha Day Care Center sign",
     },
   },
-  municipalityParagraph,
+  {
+    type: "text",
+    FR: "Au Népal, le projet a depuis été discuté au niveau communal. Le maire s'est engagé à aider le projet si l'association peut démontrer la durabilité de son action pour les enfants lors de la première phase du projet, sur 3 ans. Cette phase devait financer le premier « étage » de la pyramide éducative de l'école du village. Dans le système éducatif népalais, ce premier étage est constitué de trois niveaux, pour les enfants de 3 à 6 ans (équivalent de notre école maternelle). Jusqu’à présent, l’école du village était gérée « aux mieux » par le New Sauraha Day Care Center en fonction des financements que la charité de Sanjay trouvait, ainsi que des dons ponctuels qui étaient faits par certains parents suffisamment « aisés », mais cela ne suffisait pas.",
+    EN: "In Nepal, the project has since been discussed at the municipal level. The mayor is committed to helping the project if the association can demonstrate the sustainability of its action for children during the first phase of the project, over 3 years. This phase was to finance the first 'floor' of the educational pyramid of the village school. In the Nepalese education system, this first floor is made up of three levels, for children aged 3 to 6 (equivalent to our kindergarten). Until now, the village school had been managed 'to the best of its ability' by the New Sauraha Day Care Center, depending on the funding that Sanjay's charity could find, as well as on one-off donations made by some parents who were sufficiently 'well-off', but this was not enough.",
+  },
   {
     type: "heading",
     FR: "Dans ce contexte, l’objectif d'Horizons Népal était double :",
@@ -44,9 +42,8 @@ export const projet = [
     type: "image",
     src: diagram,
     alt: {
-      FR: "Une photo d'enfants jouant au New Sauraha Day Care Center",
-      EN: "A photo of children playing at the New Sauraha Day Care Center",
+      FR: "Schéma : Horizons Népal finance et Tharu Community Women's Hand rénove l'école maternelle du village",
+      EN: "Diagram: Horizons Nepal funds and Tharu Community Women's Hand renovates the village nursery school",
     },
   },
-  municipalityParagraph,
 ];
