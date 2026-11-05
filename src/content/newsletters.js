@@ -1,3 +1,13 @@
+import update04 from "../assets/update-2025/2025-update-04.webp";
+import update07 from "../assets/update-2025/2025-update-07.webp";
+import update09 from "../assets/update-2025/2025-update-09.webp";
+import update12 from "../assets/update-2025/2025-update-12.webp";
+import update15 from "../assets/update-2025/2025-update-15.webp";
+import update16 from "../assets/update-2025/2025-update-16.webp";
+import partenariat1 from "../assets/partenariat/partenariat-1.webp";
+import partenariat2 from "../assets/partenariat/partenariat-2.webp";
+import partenariat3 from "../assets/partenariat/partenariat-3.webp";
+
 export const newsletters = [
   {
     date: "2025-10-21",
@@ -33,6 +43,7 @@ export const newsletters = [
   {
     date: "2025-04-16",
     title: "Rentrée scolaire 2082 au Népal",
+    images: [update04, update07, update09, update12, update15, update16],
     paragraphs: [
       "Bonjour à toutes et à tous,",
       "L'heure de la rentrée a sonné à Jankauli ! Les élèves ont repris le chemin de l'école le 15 avril et avec eux, le personnel que nous souhaitons pérenniser en assurant un revenu mensuel décent et certain. A ce jour, l'équipe est constituée de 3 enseignant-e-s, deux volontaires et une personne d'entretien/cuisinière.",
@@ -51,6 +62,7 @@ export const newsletters = [
   {
     date: "2024-11-20",
     title: "Nouvelles !",
+    images: [partenariat1, partenariat2, partenariat3],
     paragraphs: [
       "Bonjour à toutes et à tous,",
       "Après une longue pause estivale, l'équipe d'Horizons Népal est de retour avec des nouvelles automnales de l'école maternelle du village de Jankauli dans le district de Chitwan. L'occasion pour nous de faire un point sur l'achèvement des travaux réalisés à l'école, la poursuite de l'échange épistolaire mis en place entre la France et le Népal, et de vous immerger dans une journée type à l'école !",
@@ -58,7 +70,6 @@ export const newsletters = [
       "Par ailleurs, l'échange épistolaire entre l'école des Leins à Moulézan dans le Gard et l'école de Jankauli se poursuit. Les partenariats avec l'école d'Assas dans l'Hérault et de Bulle dans le canton de Fribourg en Suisse se mettent en place, pour un début très prochain, nous l'espérons. Si vous souhaitez en savoir plus sur cet échange, ou y contribuer, contactez nous !",
       "Enfin, les enfants de l'école et le personnel éducatif ont souhaité remercier vos dons en vous montrant leur quotidien à travers des vidéos. Vous trouverez ci-dessous la vidéo d'une journée à l'école avec les élèves d'une classe au bout de laquelle ils remercient notre association.",
       "Une autre vidéo dans laquelle le personnel éducatif se présente (en népali !) est en cours de traduction. Nous vous enverrons le lien très prochainement !",
-      "**********",
       "Nous nous mettons maintenant en route pour la réalisation de la seconde étape du projet, à savoir assurer le financement pérenne des salaires du personnel enseignant de l'école maternelle. 5 enseignantes et enseignants permettent de faire fonctionner les trois niveaux de l'école.",
       "Il est important de rappeler, comme expliqué sur le site Internet de l'association, que l'objectif n'est pas de se substituer au financement local des salaires du personnel enseignant et administratif, mais bien de donner l'impulsion afin que les autorités publiques prennent, à terme, le relais. Pour cela, ces dernières ont demandé des garanties de fonctionnement pérenne de l'école maternelle et c'est ici que notre action se situe.",
       "Voici comment fonctionne le système éducatif de la petite enfance au Népal. L'année scolaire débute en avril. Les \"grandes\" vacances ont lieu aux mois de juin et juillet, période de fortes chaleurs au Népal. Le pré-scolaire pour les enfants âgés de 2 ans et demi à 5 ans est divisé en trois niveaux : playgroup, nursery et kindergarten. Depuis le mois d'avril, l'école propose aux parents une classe par niveau. Les enfants se retrouvent parfois pour des activités communes.",
@@ -67,8 +78,8 @@ export const newsletters = [
       "Vous avez également toujours la possibilité de participer aux actions de l'association en effectuant un don ponctuel ou mensuel.",
       "Nous vous remercions et restons pleinement disponibles pour échanger avec vous si le cœur vous en dit !",
       "L'équipe d'Horizons Népal",
-      [{ text: "https://www.youtube.com/watch?v=Sqcpom0Ury4", href: "https://www.youtube.com/watch?v=Sqcpom0Ury4" }],
-      [{ text: "https://www.youtube.com/watch?v=YGJKkOSseMA", href: "https://www.youtube.com/watch?v=YGJKkOSseMA" }],
+      [{ text: "Vidéo : une journée à l'école", href: "https://www.youtube.com/watch?v=Sqcpom0Ury4" }],
+      [{ text: "Vidéo : le personnel éducatif se présente", href: "https://www.youtube.com/watch?v=YGJKkOSseMA" }],
     ],
   },
   {
@@ -148,10 +159,10 @@ export const newsletters = [
       "Bonjour à tous et à toutes,",
       "D'abord un grand MERCI à vous tous.tes pour vos donations. Elles nous ont permis d'atteindre un premier palier de financement (3000 euros sur 22500 euros). Avec cette somme, nous avons pu virer un premier financement à notre partenaire associatif sur place. Les travaux de rénovations et de construction de l'école vont donc commencer sous peu et, nous l'espérons, seront suffisamment avancés au début de l'année scolaire népalaise, c'est à dire le 15 avril prochain. Nous vous tiendrons informés de l'avancée des travaux et de la rentrée des enfants, à travers un reportage photo, que nous publierons... sur nos toutes nouvelles pages Facebook et Instagram! Ainsi que sur le site web et par mail.",
       "Nous vous joignons ici les liens des différentes pages de l'association.",
-      ["Facebook : ", { text: "https://www.facebook.com/profile.php?id=61556416412259", href: "https://www.facebook.com/profile.php?id=61556416412259" }],
-      ["Instagram : ", { text: "https://www.instagram.com/horizonsnepal/", href: "https://www.instagram.com/horizonsnepal/" }],
-      ["HelloAsso : ", { text: "https://www.helloasso.com/associations/horizons-nepal", href: "https://www.helloasso.com/associations/horizons-nepal" }],
-      ["Site Web : ", { text: "https://horizonsnepal.org/", href: "https://horizonsnepal.org/" }],
+      [{ text: "Facebook", href: "https://www.facebook.com/profile.php?id=61556416412259" }],
+      [{ text: "Instagram", href: "https://www.instagram.com/horizonsnepal/" }],
+      [{ text: "HelloAsso", href: "https://www.helloasso.com/associations/horizons-nepal" }],
+      [{ text: "Site Web", href: "https://horizonsnepal.org/" }],
       "N'hésitez pas à rejoindre la communauté, et à diffuser autour de vous car nous avons encore une longue route à parcourir!",
       "Bien entendu, nous restons ouvert à toutes questions et besoins que vous auriez pour diffuser notre projet.",
       "Bien à vous,",

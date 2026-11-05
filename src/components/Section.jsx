@@ -1,4 +1,12 @@
-import { Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Image,
+  ListItem,
+  SimpleGrid,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { Fragment, useContext } from "react";
 import { LanguageContext } from "../languageContext";
 import { Gallery } from "./Gallery";
@@ -25,6 +33,20 @@ const renderers = {
   ),
   gallery: (block, locale) => (
     <Gallery images={block.images} altPrefix={block.altPrefix[locale]} />
+  ),
+  figures: (block, locale) => (
+    <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} my={6}>
+      {block.items.map((item, index) => (
+        <Box key={index} textAlign="center">
+          <Heading as="p" size="xl" mb={1} textAlign="center">
+            {item.value[locale]}
+          </Heading>
+          <Text fontSize="sm" textAlign="center" mb={0}>
+            {item.label[locale]}
+          </Text>
+        </Box>
+      ))}
+    </SimpleGrid>
   ),
 };
 

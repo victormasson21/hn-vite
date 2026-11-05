@@ -1,3 +1,6 @@
+import midiLibre from "../assets/medias/midi-libre.webp";
+import divergenceFm from "../assets/medias/divergence-fm.svg";
+
 const donate = "https://bit.ly/HorizonsNepalDonate";
 const schoolFacebook =
   "https://www.facebook.com/people/New-sauraha-daycare-centre/100067792186502/";
@@ -45,5 +48,18 @@ export const contact = {
       EN: "Derahai Danayabad (Thank you very much).",
     },
     { type: "heading", FR: "धेरै धन्यवाद", EN: "धेरै धन्यवाद" },
+  ],
+  pressTitle: { FR: "On parle de nous", EN: "In the press" },
+  press: [
+    {
+      name: "Midi Libre",
+      logo: midiLibre,
+      href: "https://www.midilibre.fr/2024/02/24/horizons-nepal-soutient-leducation-des-enfants-defavorises-au-nepal-11784668.php",
+    },
+    {
+      name: "Divergence FM",
+      logo: divergenceFm,
+      href: "https://divergence-fm.org/podcasts/horizons-nepal/",
+    },
   ],
 };

@@ -2,19 +2,9 @@ import image from "../assets/horizon-nepal-association.webp";
 
 export const histoire = [
   {
-    type: "heading",
-    FR: "L'association Horizons Népal a été créée afin de soutenir le droit à l'éducation d'enfants de familles défavorisées du village de Bacchauli, dans le district de Chitwan, au Népal.",
-    EN: "Horizons Nepal was created to support the right to education of children from disadvantaged families in the village of Bacchauli, in the Chitwan district of Nepal.",
-  },
-  {
     type: "text",
-    FR: "Cette association est née à la suite de la rencontre entre deux enseignants chercheurs, l'un népalais et l'autre français. Sanjaya Mahato, professeur à Kathmandu University et Romain Valadaud, chercheur à l'Institut de Recherche pour le Développement à Montpellier. Ils ont collaboré à plusieurs reprises au sein de différents programmes de recherche au Népal depuis 2014. C'est au cours de ces terrains de recherche qu'une amitié s'est développée, au-delà de la coopération scientifique.",
-    EN: "This association was born following the meeting between two researchers, one Nepalese and the other French. Sanjaya Mahato, professor at Kathmandu University and Romain Valadaud, researcher at the Institute of Research for Development in Montpellier. They have collaborated several times in different research programs in Nepal since 2014. During these research projects, a friendship developed beyond scientific cooperation.",
-  },
-  {
-    type: "text",
-    FR: "Sanjaya Mahato est issu d'une famille défavorisée du village de Jankauli, dans le district de Chitwan dans les plaines du Népal. Il fait partie de l'ethnie Tharu, premiers habitants des plaines du Népal, le Tarai. Historiquement discriminés au sein de la société népalaise, les Tharu font partie des populations les plus défavorisées du Népal.",
-    EN: "Sanjaya Mahato comes from a disadvantaged family in the village of Jankauli, in the Chitwan district in the plains of Nepal. He is part of the Tharu ethnic group, the first inhabitants of these plains called the Taraï. Historically discriminated against within Nepalese society, the Tharu are among the most disadvantaged populations in Nepal.",
+    FR: "Horizons Népal est née de la rencontre entre deux chercheurs : Sanjaya Mahato, professeur à Kathmandu University, et Romain Valadaud, chercheur à l'Institut de Recherche pour le Développement à Montpellier. Depuis 2014, plusieurs programmes de recherche au Népal ont fait naître entre eux une amitié, au-delà de la coopération scientifique.",
+    EN: "Horizons Nepal was born from the meeting of two researchers: Sanjaya Mahato, professor at Kathmandu University, and Romain Valadaud, researcher at the Institute of Research for Development in Montpellier. Since 2014, several research programmes in Nepal have grown a friendship between them, beyond scientific cooperation.",
   },
   {
     type: "image",
@@ -26,7 +16,12 @@ export const histoire = [
   },
   {
     type: "text",
-    FR: "À force de persévérance, Sanjaya a toutefois réussi à gravir les échelons du système éducatif, obtenir son doctorat entre le Népal et la Pologne, et devenir enseignant à l'Université de Katmandou. Du fait de son parcours, il est convaincu du pouvoir de l'éducation publique pour changer les destins des enfants.",
-    EN: "However, through perseverance, Sanjaya managed to climb the ranks of the education system and obtain his Phd. Degree from both Nepal and Poland, and become a professor at the University of Kathmandu. Because of his background, he is convinced of the power of public education to change the destinies of children.",
+    FR: "Sanjaya est issu d'une famille défavorisée du village de Jankauli, dans les plaines du Népal. Il appartient à l'ethnie Tharu, premiers habitants de ces plaines, historiquement discriminée et parmi les plus pauvres du pays. À force de persévérance, il a gravi les échelons du système éducatif jusqu'au doctorat, entre le Népal et la Pologne, et enseigne aujourd'hui à l'Université de Katmandou. Son parcours l'a convaincu du pouvoir de l'éducation publique pour changer le destin des enfants.",
+    EN: "Sanjaya comes from a disadvantaged family in the village of Jankauli, in the plains of Nepal. He belongs to the Tharu, the first inhabitants of these plains, historically discriminated against and among the poorest in the country. Through perseverance he climbed the education system up to a doctorate, between Nepal and Poland, and now teaches at Kathmandu University. His path convinced him of the power of public education to change children's destinies.",
+  },
+  {
+    type: "text",
+    FR: "Il a partagé avec Romain son projet pour l'école de son village. Après quelques échanges avec des amis et sa famille, Romain a créé l'association Horizons Népal en janvier 2023 pour lever les fonds qui lui permettraient de voir le jour.",
+    EN: "He shared with Romain his project for his village's school. After a few conversations with friends and family, Romain founded the Horizons Nepal association in January 2023 to raise the funds that would make it happen.",
   },
 ];

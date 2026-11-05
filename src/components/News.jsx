@@ -14,6 +14,7 @@ import { useContext, useState } from "react";
 import { LanguageContext } from "../languageContext";
 import { newsletters } from "../content/newsletters";
 import { Paragraph } from "./Paragraph";
+import { Gallery } from "./Gallery";
 
 const dateLocale = { FR: "fr-FR", EN: "en-GB" };
 
@@ -33,6 +34,7 @@ export const News = () => {
 
   return (
     <>
+      {locale === "EN" ? <Text>Newsletters, in French.</Text> : null}
       <Stack spacing={3}>
         {newsletters.map((newsletter) => (
           <Box
@@ -78,6 +80,9 @@ export const News = () => {
               {selected.paragraphs.map((paragraph, index) => (
                 <Paragraph key={index} segments={paragraph} />
               ))}
+              {selected.images ? (
+                <Gallery images={selected.images} altPrefix={selected.title} />
+              ) : null}
             </ModalBody>
           </ModalContent>
         </Modal>
