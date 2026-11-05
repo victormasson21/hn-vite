@@ -16,7 +16,10 @@ export const home = [
     type: "figures",
     items: [
       {
-        value: { FR: String(figures.classrooms), EN: String(figures.classrooms) },
+        value: {
+          FR: String(figures.classrooms),
+          EN: String(figures.classrooms),
+        },
         label: { FR: "salles de classe", EN: "classrooms" },
       },
       {

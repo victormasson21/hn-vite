@@ -38,7 +38,13 @@ const renderers = {
     <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} my={6}>
       {block.items.map((item, index) => (
         <Box key={index} textAlign="center">
-          <Heading as="p" size="xl" mb={1} textAlign="center">
+          <Heading
+            as="p"
+            size="lg"
+            mb={1}
+            textAlign="center"
+            whiteSpace="nowrap"
+          >
             {item.value[locale]}
           </Heading>
           <Text fontSize="sm" textAlign="center" mb={0}>

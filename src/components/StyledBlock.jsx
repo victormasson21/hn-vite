@@ -14,7 +14,7 @@ export const StyledBlock = ({ id, children }) => {
       border="2px solid"
       borderColor="text.dark"
       boxShadow={`3px 3px ${text.dark}`}
-      maxWidth="xl"
+      maxWidth="3xl"
     >
       {children}
     </Box>
