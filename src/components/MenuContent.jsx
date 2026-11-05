@@ -7,7 +7,7 @@ export const MenuContent = ({ setMenuOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const locale = useContext(LanguageContext);
   return (
-    <List textAlign={isMobile ? "center" : "left"}>
+    <List textAlign={isMobile ? "center" : "right"}>
       {Object.keys(contentMap).map((key) => {
         return (
           <ListItem key={key}>
@@ -23,7 +23,7 @@ export const MenuContent = ({ setMenuOpen }) => {
                 cursor="pointer"
                 sx={{ "&:hover": { opacity: 0.6 } }}
                 whiteSpace="nowrap"
-                textAlign={isMobile ? "center" : "left"}
+                textAlign={isMobile ? "center" : "right"}
               >
                 {contentMap[key].title[locale]}
               </Heading>

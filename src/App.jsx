@@ -63,14 +63,10 @@ const App = () => {
           spacing={8}
           pt={isMobile ? 4 : 8}
           pb={8}
+          justify="space-between"
           direction={isMobile ? "column" : "row"}
           align={isMobile ? "center" : "flex-start"}
         >
-          {isMobile ? null : (
-            <Box position="sticky" top={0} pl={4}>
-              <MenuContent setMenuOpen={setMenuOpen} />
-            </Box>
-          )}
           <Box>
             {isMobile && menuOpen ? (
               <StyledBlock>
@@ -80,6 +76,11 @@ const App = () => {
               <Content />
             )}
           </Box>
+          {isMobile ? null : (
+            <Box position="sticky" top={0} pr={4}>
+              <MenuContent setMenuOpen={setMenuOpen} />
+            </Box>
+          )}
         </Stack>
 
         {isMobile ? <Footer /> : null}
