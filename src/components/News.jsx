@@ -1,6 +1,5 @@
 import {
   Box,
-  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -13,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../languageContext";
-import { newsletters } from "../newsletters";
+import { newsletters } from "../content/newsletters";
+import { Paragraph } from "./Paragraph";
 
 const dateLocale = { FR: "fr-FR", EN: "en-GB" };
 
@@ -23,20 +23,6 @@ const formatDate = (date, locale) =>
     month: "long",
     year: "numeric",
   });
-
-const Paragraph = ({ segments }) => (
-  <Text>
-    {[segments].flat().map((segment, index) =>
-      segment.href ? (
-        <Link key={index} href={segment.href} isExternal>
-          {segment.text}
-        </Link>
-      ) : (
-        segment
-      ),
-    )}
-  </Text>
-);
 
 export const News = () => {
   const locale = useContext(LanguageContext);
