@@ -15,7 +15,7 @@ const PressLogos = () => {
       <Heading as="h3" size="md" mt={8}>
         {contact.pressTitle[locale]}
       </Heading>
-      <SimpleGrid minChildWidth="120px" spacing={3}>
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={3}>
         {contact.press.map(({ name, logo, href }) => (
           <Link
             key={name}
